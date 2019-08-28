@@ -1,0 +1,65 @@
+<section class="banners-extras">
+    <div class="center banners-extras__center">
+        <div class="banners-extras__item">
+            {{ banner.extra4 }}
+        </div>
+        <div class="banners-extras__item">
+            {{ banner.extra2 }}
+        </div>
+        <div class="banners-extras__item">
+            {{ banner.extra3 }}
+        </div>
+        <div class="banners-extras__item">
+            {{ banner.extra4 }}
+        </div>
+    </div>
+</section>
+
+{% element 'snippets/banner_info' %}
+
+<!-- VITRINE 1 -->
+
+<section class="showcase-carousel">
+    {% set products = Products({
+    'filter': [settings.filtros1],
+    'limit': settings.quantidade1,
+    'order': settings.ordem1  
+    }) %}
+
+    {% element 'snippets/showcase' {
+    "showcaseTitle": '<h2 class="banners-extra__title title--main">' ~  settings.vitrine1  ~ '</h2>',
+    "products": products
+    } %}
+</section>
+
+<div class="banner-showcase">
+    {{ banner.extra5 }}
+</div>
+
+<!-- VITRINE 2 -->
+<section class="showcase-carousel">
+    {% set products = Products({
+    'filter': [settings.filtros2],
+    'limit': settings.quantidade2,
+    'order': settings.ordem2  
+    }) %}
+
+    {% element 'snippets/showcase' {
+    "showcaseTitle": '<h2 class="banners-extra__title title--main">' ~  settings.vitrine2  ~ '</h2>',
+    "products": products
+    } %}
+</section>
+
+<!-- VITRINE 3 -->
+<section class="showcase-carousel">
+    {% set products = Products({
+    'filter': [settings.filtros3],
+    'limit': settings.quantidade3,
+    'order': settings.ordem3  
+    }) %}
+
+    {% element 'snippets/showcase' {
+    "showcaseTitle": '<h2 class="banners-extra__title title--main">' ~  settings.vitrine3  ~ '</h2>',
+    "products": products
+    } %}
+</section>

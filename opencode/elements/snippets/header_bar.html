@@ -1,0 +1,54 @@
+<section id="header_bar" class="container">
+
+	<div class="row">
+
+		<div class="hidden-lg col-xs-3 col-md-2 col-lg-2 env-menu-mobile">
+			<button class="mobileMenu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+		</div>
+
+		<div class="col-xs-8 col-sm-3 col-md-2 env-brand">
+
+			<figure class="brand">
+
+				<a href="{{ links.home }}" title="{{ store.name }}">
+					<img src="{{ asset('img/logo-taita.png') }}" alt="Auaha">
+				</a>
+				
+			</figure>
+
+		</div>
+
+		<div class="col-xs-2 env-user hidden-md hidden-xs hidden-sm">
+			{% element 'snippets/user' %}
+		</div>
+
+		<div class="col-xs-12 col-md-5 col-sm-10 env-search">
+			{% element 'snippets/search' %}
+		</div>
+
+		<a href="{{ links.contact }}" class="support col-xs-2">
+
+			<svg class="support__icon icon--support">
+				<use xlink:href="#icon-support"></use>
+			</svg>
+
+			<div class="support__info">
+
+				<span class="support__title">
+					Atendimento
+				</span>
+
+				<span class="support__desc">
+					{{ Translation('ag_telefone_1') }}
+				</span>
+			</div>
+
+		</a>
+
+		<div class="col-md-2 col-xs-4 col-lg-1 env-cart">
+			{% element 'snippets/cart' %}
+		</div>
+
+	</div>
+
+</section>

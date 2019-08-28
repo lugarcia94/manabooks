@@ -1,0 +1,71 @@
+<div class="container">
+    {% element 'snippets/newsletter' %}
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <nav class="footer_pages">
+                <h3 class="footer__title">Institucional</h3>
+
+                <a href="{{ links.company }}" class="page__link">Quem somos</a>
+            </nav>
+
+            <nav class="footer__pages">
+                <h3 class="footer__title">Ajuda</h3>
+
+                <a href="/como-comprar" class="page__link">Como comprar</a>
+                <a href="/politica-de-privacidade" class="page__link">Política de privacidade</a>
+                <a href="/pagamento-envio" class="page__link">Formas de pagamento e envio</a>
+                <a href="/politica-de-troca" class="page__link">Política de troca</a>
+                <a href="{{ links.contact }}" class="page__link">Fale conosco</a>
+                <a href="{{ links.central }}" class="page__link">Minha conta</a>
+                <a href="{{ links.orders }}" class="page__link">Acompanhamento do pedido</a>
+            </nav>
+
+            <nav class="footer__pages footer__pages--support">
+                <h3 class="footer__title">Atendimento</h3>
+
+                {% element 'snippets/contact' %}
+
+                <ul class="social-footer">
+                    <li class="social-footer__item">
+                        <a href="{{ settings.faceKanitz }}" target="_blank" class="social-footer__link">
+                            <svg class="social-footer__icon icon--facebook">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                            Auaha 1
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="footer__payments">
+                <h3 class="footer__title">Pagamento</h3>
+
+                <ul class="payment-list">
+                    {% for payment in paymentMethods.credit %}
+                    <li class="payment-list__item"><img src="{{ payment.thumbnail.url }}" alt="{{ payment.display_name }}"></li>
+                    {% endfor %}
+                    {% for payment in paymentMethods.order %}
+                    <li class="payment-list__item"><img src="{{ payment.thumbnail.url }}" alt="{{ payment.display_name }}"></li>
+                    {% endfor %}
+                </ul>
+                <div class="safe">
+                    <h3 class="footer__title">Segurança</h3>
+                    <ul class="security__list">
+                        <li class="security__seal">{{ seals.ebit }}</li>
+                        <li class="security__seal">{{ seals.hackersafe }}</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="footer_copyright">
+            <div class="copyright__text">{{ Translation('ag_mensagem_rodape') }}</div>
+            <a href="http://auaha.com.br/" class="seal__auaha" target="_blank"><img src="{{ asset('img/auaha.png') }}" alt=""/></a>
+            <!-- {% element 'snippets/credits' %} -->
+        </nav>
+        <nav class="footer__copyright">
+            <div class="copyright__text">{{ settings.copyright }}</div>
+            {% element 'snippets/credits' %}
+        </nav>
+    </footer>
+</div>

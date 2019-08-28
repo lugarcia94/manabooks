@@ -1,0 +1,23 @@
+
+@function getCol($col){
+	@return ($col / 12) * 100%;
+}
+
+@function getPercent($value){
+	@return ( 100% / $value );
+}
+
+@function controlNavBar($col){
+	$val1: "";
+	$val2: "";
+	@for $i from 1 through $col {
+		@if $i == 1 {
+			$val1:"&:first-child";
+		}
+		@else{
+			$val1: $val1 + "+ li";
+		}
+		$val2: $val2 + $val1 + ',';
+	}
+	@return $val2;
+}

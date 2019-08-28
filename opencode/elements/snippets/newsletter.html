@@ -1,0 +1,31 @@
+<section id="newsletter" class="newsletter">
+    <div class="newsletter__title">
+        <div class="newsletter__info">
+            <span>Quer novidades</span>
+            <strong>E promoções?</strong>
+        </div>
+    </div>
+    <p class="newsletter__sub">
+        Cadastre-se na nossa<br>Newsletter
+    </p>
+    <form action="{{ links.newsletter }}" class="newsletter__form" method="POST">
+        <input type="hidden" name="loja" value="{{ store.id }}">
+        <div class="input-box">
+            <label for="news-nome">
+                <svg class="newsletter__icon icon--name">
+                    <use xlink:href="#icon-user"></use>
+                </svg>
+            </label>
+            <input name="nome" id="news-nome" type="text" class="newsletter__name newsletter__input" placeholder="Seu nome">
+        </div>
+        <div class="input-box">
+            <label for="news-email">
+                <svg class="newsletter__icon icon--email">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            </label>
+            <input name="email" type="text" id="news-email" class="newsletter__email newsletter__input" placeholder="Seu e-mail">
+        </div>
+        <button type="input" class="newsletter__button">Quero me cadastrar</button>
+    </form>
+</section>

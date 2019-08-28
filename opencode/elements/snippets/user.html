@@ -1,0 +1,22 @@
+<div class="account__list tray-hide" data-logged-user="false">
+    <div class="user">
+         <svg class="user__icon icon--user"><use xlink:href="#icon-user"></use></svg>
+         <div class="user__list">        
+             <a href="{{ links.login }}" class="user__title">Entrar /</a>
+             <a href="{{ links.login }}" class="user__title">Cadastrar</a>
+             <a href="{{ links.orders }}" class="user__desc">Meus pedidos</a>
+     </div>
+    </div>
+ </div>
+ 
+ <div class="account__list tray-hide" data-logged-user="true">
+     <div class="user">
+         <svg class="user__icon icon--user"><use xlink:href="#icon-user"></use></svg>
+         <div class="user__list">
+             <span class="user__title">Ol&#225;, <span data-customer="name"></span></span>
+             <a href="{{ links.orders }}" class="user__desc">Meus pedidos</a>
+             <a href="{{ links.logout }}" class="user__desc">Sair</a>
+         </div>
+     </div>
+ </div>
+ 

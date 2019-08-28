@@ -1,0 +1,12 @@
+<form id="search_01" class="search" role="form" action="{{ links.search }}" data-search="suggestion">
+    <label for="search">
+        <svg class="search__icon icon--search">
+            <use xlink:href="#icon-search"></use>
+        </svg>
+    </label>
+    <input type="hidden" name="loja" value="{{ store.id }}">
+    <input type="search" id="search" class="form-control search__input" name="palavra_busca" data-input="suggestion" placeholder="Digite o produto que deseja encontrar">
+    <button class="btn-search search__button">
+        Buscar
+    </button>
+</form>

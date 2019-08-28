@@ -1,0 +1,82 @@
+{#
+# Smart Filter
+# elements/snippets/smart_filter.html
+#}
+
+{% if filters %}
+<form name="form-filter" method="get">
+	<input type="hidden" name="loja" value="{{ store.id }}">
+	{% if search.word %}
+	<input name="palavra_busca" type="hidden" value="{{ search.word }}">
+	{% endif %}
+
+	{% if category.id %}
+	<input type="hidden" name="categoria" value="{{ category.id }}">
+	{% endif %}
+
+	{% if filters.applied %}
+	<h3>Filtros Aplicados</h3>
+	<ul>
+		{% for applied in filters.applied %}
+			{% for item in applied %}
+			<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endfor %}
+		{% endfor %}
+	</ul>
+	{% endif %}
+	
+	{% for key, myFilter in filters %}
+		{% if myFilter.items %}
+			<h3 class="{{ key }}">{{ myFilter.title }}</h3>
+			<ul class="{{ key }}-list">
+			{% for item in myFilter.items %}
+				<li>
+					{% if key == "prices" %}
+						{% if item.type == "link" %}
+						<a href="{{ item.url }}">De R${{ item.from|round|currency }} a R${{ item.to|round|currency }}</a>
+						{% elseif item.type == "checkbox" %}
+						<label>
+							{% set checked = item.applied ? 'checked="checked"' %}
+							<input type="checkbox" name="{{ item.name }}" value="{{ item.value }}" {{ checked }} />
+							<a href="{{ item.url }}">De R${{ item.from|round|currency }} a R${{ item.to|round|currency }}</a>
+						</label>
+						{% endif %}
+					{% else %}
+						{% if item.type == "link" %}
+						<a href="{{ item.url }}">{{ item.title }}</a>
+						{% elseif item.type == "checkbox" %}
+						<label>
+							{% set checked = item.applied ? 'checked="checked"' %}
+							<input type="checkbox" name="{{ item.name }}" value="{{ item.value }}" {{ checked }} />
+							<a href="{{ item.url }}">{{ item.title }}</a>
+						</label>
+						{% endif %}
+					{% endif %}
+				</li>
+			{% endfor %}
+			</ul>
+		{% elseif myFilter|length %}
+			{% for var in myFilter %}
+				<h3>{{ var.title }}</h3>
+				<ul>
+					{% for item in var.items %}
+					<li>
+						{% if item.type == "link" %}
+						<a href="{{ item.url }}">{{ item.title }}</a>
+						{% elseif item.type == "checkbox" %}
+						<label>
+							{% set checked = item.applied ? 'checked="checked"' %}
+							<input type="checkbox" name="{{ item.name }}" value="{{ item.value }}" {{ checked }} />
+							<a href="{{ item.url }}">{{ item.title }}</a>
+						</label>
+						{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+
+	<button type="submit" class="filter-button">{{ Translation('filtrar') }}</button>
+</form>
+{% endif %}

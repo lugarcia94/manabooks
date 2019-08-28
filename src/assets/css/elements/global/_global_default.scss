@@ -1,0 +1,113 @@
+.tray-hide {
+  display: none;
+}
+
+.blocoAlerta {
+  color: #c33;
+}
+
+table {
+  tr {
+    border-bottom: 1px solid #ccc;
+
+    th:first-child,
+    td:first-child {
+      padding-left: 0;
+    }
+  }
+
+  th {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+    background: #FFF;
+  }
+
+  @media (max-width: 991px) {
+    p {
+      font-weight: 500;
+      margin: 10px 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    tr {
+      border: 1px solid $cor02;
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    td {
+      display: block;
+      padding: 14px;
+      text-align: center;
+      width: 100%;
+
+      &:before {
+        content: attr(data-table-title);
+      }
+    }
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.Mapa, .Seguro {
+  display: none;
+}
+
+.sign-auaha-tray {
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  #AuahaSign {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 120px;
+  }
+
+  #NavLogoTray {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      padding: 5px 18px;
+      background: #ccc;
+      font-family: Verdana, sans-serif;
+      font-weight: 400;
+      font-size: 9px;
+      line-height: normal;
+      text-transform: uppercase;
+      color: #333;
+
+      strong {
+        font-family: Verdana, sans-serif;
+        font-weight: 700;
+        font-size: 9px;
+        text-transform: uppercase;
+        color: #333;
+      }
+    }
+  }
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: calc(100% - 30px);
+}
+
+
+span.cart-preview-item-delete , .bt-continuar-comprando {
+  cursor: pointer;
+}

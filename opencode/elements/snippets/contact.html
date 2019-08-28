@@ -1,0 +1,27 @@
+<ul class="contact-list">
+    <li class="contact-list__item">
+        <span class="contact-list__title">
+            WhatsApp
+        </span>
+        <a href="https://api.whatsapp.com/send?phone={{ settings.linkWhatsapp }}" target="_blank" class="contact-list__desc">{{ settings.whatsapp }}</a>
+    </li>
+    <li class="contact-list__item">
+        <span class="contact-list__title">
+            Atendimento
+        </span>
+        <span class="contact-list__desc">{{ settings.support }}</span>
+    </li>
+    <li class="contact-list__item">
+        <span class="contact-list__title contact-list__title--small">
+            Telefone
+        </span>
+        <span class="contact-list__desc contact-list__desc--small">{{ settings.phone }}</span>
+    </li>
+    <li class="contact-list__item">
+        <span class="contact-list__title contact-list__title--small">
+            E-mail
+        </span>
+        <a href="mailto:{{ settings.email }}" class="contact-list__desc contact-list__desc--small">{{ settings.email }}</a>
+    </li>
+
+</ul>
