@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 28" width="25" height="28">
+	<defs>
+		<image width="25" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAMAAACj+uTiAAAAAXNSR0IB2cksfwAAAPxQTFRFZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2Ki0EPNbgAAAFR0Uk5TAAqVzYUDsv+PAZ1p/Edg8SrH4Ba0q37YSm0J9NE/qO1JF9NzXPUhAsnGBDT9jIPD+o6UGBXd9hAm61nEvQYtgpsl3HcUwv5PicVBn/gLtycolqlMslbBBgAAAO1JREFUeJxt0GdbAjEMAOCccEREtgjKOmTKEkFElgoqoICs//9fuJTR9q750jbv0zYJAIB24XDqoAjdhYiXCnBfIYXHLk4GeO21gg+P4Q9YJHgSDIVluTkLRmS55RKVJcblTpb7+DGfSFqLS7F82mOfgkEQz9gbBfcDUVYhkCPJFxRSLBE9lhVUqRLVVO/VWXk+hehPJA2DHTLPzRanlzbRa8zcdsxSox1Ob112qwdanzaDIad3RvjhOozqU/hrNEYxvgT6/hFlMhWoPBPpV6r+L8RlLjem1ReHfKO2tDZdSE1M+F8p5gHrzXZH6x596hV0iE5BTQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Topo">
+		<g id="Header info">
+			<use id="Telefone icon" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

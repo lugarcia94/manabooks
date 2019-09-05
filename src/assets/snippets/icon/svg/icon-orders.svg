@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 28" width="21" height="28">
+	<defs>
+		<image width="21" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAcCAMAAAC5xgRsAAAAAXNSR0IB2cksfwAAANhQTFRFZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2Ki1Tn0WwAAAEh0Uk5TAAp8tI4X4Y/R2QnP8PH6IOP06RJZ0P1wQC0iWP/WgZDK94K4wKDsG4AoMyRgA1puMAYQPAhOJg5CUBwE328BhAKUSRjo4DFHQa9digAAANZJREFUeJyN0G1XgjAUwPGLVFqtEAk3a4kPQ6cSLdSeS7PM7/+N2pGLB2h2+r1ifw737gCArIp9cAhl9lG1dnxSSKfk7NwBq+6ShrcNF77WpKylny/ZFb/WxzYEHUppl+FHDu9R2hcQhPow4DtDAIl1xDJjyOokigq70xpxDje2QHGuwq1ECutdkhgmlKV1Guo3swQVtrnZhStY574PcK/Qw59zzTUmBODxCT3ntr28EvSGVUn577meUnv+2fsiQCxXlx8hWmH9ZMwwwbTtS5StBXzL3zY/H7AtuHnLLLEAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Topo">
+		<g id="Header info">
+			<use id="Meus pedidos icon" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

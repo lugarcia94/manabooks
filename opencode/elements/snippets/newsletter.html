@@ -1,31 +1,21 @@
-<section id="newsletter" class="newsletter">
-    <div class="newsletter__title">
-        <div class="newsletter__info">
-            <span>Quer novidades</span>
-            <strong>E promoções?</strong>
+<section class="newsletter" data-tray-tst="newsletter_box">
+    <div class="newsletter__container">
+        <header class="newsletter__header">
+            <h1 class="newsletter__title">QUER NOVIDADES <span>E PROMOÇÕES?</span></h1>
+            <h2 class="newsletter__description">Cadastre-se na nossa Newsletter</h2>
+        </header>
+        <div class="newsletter__main">
+            <form class="newsletter__form" action="{{ links.newsletter }}" method="post" name="newsletter" data-tray-tst="newsletter_form">
+                <div class="newsletter__box">
+                    <input class="newsletter__input" name="name" type="text" placeholder="{{ Translation('digitar_nome') }}" required>
+                </div>
+                <div class="newsletter__box">
+                    <input class="newsletter__input" name="email" type="email" placeholder="{{ Translation('digitar_email') }}" data-tray-tst="newsletter_email" required>
+                </div>
+                <div class="newsletter__actions">
+                    <button class="newsletter__button" data-tray-tst="newsletter_cadastrar">Quero me cadastrar</button>
+                </div>
+            </form>
         </div>
     </div>
-    <p class="newsletter__sub">
-        Cadastre-se na nossa<br>Newsletter
-    </p>
-    <form action="{{ links.newsletter }}" class="newsletter__form" method="POST">
-        <input type="hidden" name="loja" value="{{ store.id }}">
-        <div class="input-box">
-            <label for="news-nome">
-                <svg class="newsletter__icon icon--name">
-                    <use xlink:href="#icon-user"></use>
-                </svg>
-            </label>
-            <input name="nome" id="news-nome" type="text" class="newsletter__name newsletter__input" placeholder="Seu nome">
-        </div>
-        <div class="input-box">
-            <label for="news-email">
-                <svg class="newsletter__icon icon--email">
-                    <use xlink:href="#icon-email"></use>
-                </svg>
-            </label>
-            <input name="email" type="text" id="news-email" class="newsletter__email newsletter__input" placeholder="Seu e-mail">
-        </div>
-        <button type="input" class="newsletter__button">Quero me cadastrar</button>
-    </form>
 </section>

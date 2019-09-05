@@ -1,12 +1,15 @@
-<form id="search_01" class="search" role="form" action="{{ links.search }}" data-search="suggestion">
-    <label for="search">
-        <svg class="search__icon icon--search">
-            <use xlink:href="#icon-search"></use>
-        </svg>
-    </label>
-    <input type="hidden" name="loja" value="{{ store.id }}">
-    <input type="search" id="search" class="form-control search__input" name="palavra_busca" data-input="suggestion" placeholder="Digite o produto que deseja encontrar">
-    <button class="btn-search search__button">
-        Buscar
-    </button>
-</form>
+<div class="search">
+    <form class="search__form" role="form" action="{{ links.search }}" method="get" data-search="suggestion">
+        <input type="hidden" name="loja" value="{{ store.id }}" />
+        <input class="search__input" type="text" data-input="suggestion" placeholder="{{ Translation('buscar') }}"
+            name="palavra_busca" tabindex="1" data-tray-tst="busca_palavra" required />
+        <button class="search__button" type="submit" tabindex="2" data-tray-tst="botao_buscar">
+            {% element 'snippets/icon' {
+                'name': 'search',
+                'width': '26',
+                'height': '26'
+            } %}
+            <span class="search__button-label">Buscar</span>
+        </button>
+    </form>
+</div>

@@ -1,5 +1,37 @@
-<header id="header">
-    {% element 'snippets/top_bar' %}
-    {% element 'snippets/header_bar' %}
-    {% element 'snippets/nav_bar' %}
+<header id="header" class="header">
+    <div class="header__container">
+        <div class="header__menu">
+            <button aria-controls="navigation" type="button" class="button button--menu">
+                <i class="button__icon fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="header__logo">
+            {% element 'snippets/logo' %}
+        </div>
+
+        <div class="header__search">
+            {% element 'snippets/search' %}
+        </div>
+        <div class="header__customer">
+            {% element 'snippets/customer' { modifier: 'header' } %}
+        </div>
+
+        <div class="header__attendance">
+            {% element 'snippets/attendance' { modifier: 'header' } %}
+        </div>
+
+        <div class="header__orders">
+            {% element 'snippets/icon' {
+                'name': 'orders',
+                'width': '21',
+                'height': '28'
+            } %}
+            <a href="{{ links.orders }}" data-tray-tst="meus_pedidos">{{ Translation('meus_pedidos') }}</a>
+        </div>
+
+        <div class="header__minicart">
+            {% element 'snippets/cart' %}
+        </div>
+    </div>
+    {% element 'navigation' %}
 </header>

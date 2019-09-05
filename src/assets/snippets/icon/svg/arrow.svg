@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" width="8" height="5">
+	<defs>
+		<image width="8" height="5" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAMAAABPT11nAAAAAXNSR0IB2cksfwAAAD9QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsyWCLwAAABV0Uk5TVQABRQ//XnUHI+Y9UtwVLfH6IS4nxmquOAAAAC1JREFUeJxjYGAEASZmBhZWNkZGdlYOBkZOLm4eXj5GoAy/gKAQI4jBKCwCJAAQ1QDqG/34+wAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Topo">
+		<g id="Header info">
+			<use id="Arrow down icon" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

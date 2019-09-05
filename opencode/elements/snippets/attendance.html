@@ -1,0 +1,19 @@
+{% set class = '' %}
+{% if modifier %}{% set class = " attendance--" ~ modifier %}{% endif %}
+<div class="attendance{{ class }}">
+    <div class="attendance__container">
+        <div class="attendance__header">
+            <span class="attendance__icon">
+                {% element 'snippets/icon' {
+                    'name': 'telefone',
+                    'width': '25',
+                    'height': '28'
+                } %}
+            </span>
+            <div class="attendance__content">
+                <div class="attendance__title">Atendimento</div>
+                <div class="attendance__phone">{{ Translation('ag_telefone_1') }}</div>
+            </div>
+        </div>
+    </div>
+</div>

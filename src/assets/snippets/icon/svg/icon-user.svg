@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">
+	<defs>
+		<image width="28" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACcUlEQVRIS72WPW8TQRCG37HNh0gXkEKdH0D4BVDR0aBIiAh853UMd6FAUIEU0UUIKpQGvMTx7jmSFSSEEJQ0Eb8A6BEtBUlFEWT7Bt3Bmb3LfcUxXHe378wzszOzt4SSz/JyZ7bm17YBuhQ34ffDyvDa5mZrr4wrKhK5wttgoFWkC9YJ6LSVfTNPmwl0hMdphgx6CqYP4RrxBQLfS9NJZaf6Tv14AEaV87Jb/5QXudPcWgD7H01NGvQAMAHbk8o+XWY7I40jvF0As9F7EhoDmrCsLbndUGdHVHnEANfYX32mxbe0gLJ8jYFlYFl1zQouzWcacFcq+0wy6ixY1tYF3x3hfQcQliQKKgQ6wtsCcMNcMIFFsALon26nnlTW79aNHFZGWHjesz8fNrs84IrlnfOrCDs8yJJarf5cdTQIC1+mFnkdW2RPQ5ojV3g7DFz8H0CAdsioz7pU9t2iFp8kQ1f01hl8JzycIiBz5coLXX/zT4BNvchMr2JAIhLtrqWzMijq1Kz6Bf7cZq/BzCoGBLOWuiFyz0vhDQDUEpqBVPbxPDtXeJoBOwK+A3A52TSO8F4CuHqYczTSEtBvK/t69D4uG/CW6vXezKka/zCBK83uvM/VL5PAIptRleY7HeurOed8bH8mNvhgWpTael1Ur7KBBHV1jYYJBz8wviX0GoFWoyynCfzri9aksh6mHd4+gErZLAp0Y1+xw9vc5ymBkm5YKjtMIvMHPE2wOaNFV4wjc3OvGMm5OSqt1CXKgO4DODEh9KdU9sk028KLsCP0EkD9MmBiWmpraztPWwg0jZ2Gdx+ExzGHjAdS20/KBBRofgH5jiz6lOSHvwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Topo">
+		<g id="Header info">
+			<use id="User icon" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+		</g>
+	</g>
+</svg>

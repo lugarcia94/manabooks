@@ -1,0 +1,122 @@
+/**
+* Theme Name: Taita
+* Theme URI:
+* Author: Auaha Developers
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/**
+* Variaveis Padrões
+*/
+{% set color_one = "#6762a2" %}
+{% set color_two = settings.color_two %}
+
+{% set button_bg = color_one %}
+{% set button_color = "#fff" %}
+{% set button_bg_hover = color_two %}
+{% set button_color_hover = "#fff" %}
+
+{% set calltoaction_bg = settings.button_call-to-action_bg %}
+{% set calltoaction_color = settings.button_call-to-action_color %}
+
+/**
+* Scrollbar e Selection
+*/
+::-webkit-scrollbar {
+width: 4px;
+height: 4px;
+}
+
+::-webkit-scrollbar-track {
+background: {{ color_one }}
+}
+
+::-webkit-scrollbar-thumb {
+background-color: {{ color_two }};
+}
+
+::selection{
+background : {{ color_one }};
+color : #fff;
+}
+
+/**
+* Buttons e Inputs
+*/
+button {
+background: {{ button_bg }};
+color: {{ button_color }};
+}
+.button--menu {
+color: {{ button_bg }};
+}
+
+/**
+* Links
+*/
+a {
+color: {{ color_two }};
+}
+a:hover {
+color: {{ color_one }};
+}
+
+/**
+* Cart, Customer
+*/
+
+/**
+* Header
+*/
+
+[data-scrolling-mode=down] .header {
+border-color: {{ color_one }};
+}
+
+.attendance {
+color: {{ color_one }};
+}
+
+/**
+* Desktop maior que 992px
+*/
+@media (min-width: 992px) {
+
+/**
+* Buttons e Inputs
+*/
+button:hover {
+background: {{ button_bg_hover }};
+color: {{ button_color_hover }};
+}
+
+.button--menu:hover {
+color: {{ button_bg_hover }};
+background: none
+}
+
+.customer__link--icon {
+background: none;
+color: {{ color_one }};
+}
+
+/**
+* Menu Navigation
+*/
+
+.menu__item--nv1:hover {
+background: {{ color_one }};
+}
+
+.menu__item--nv1:hover .menu__link--nv1 {
+color: #fff;
+text-decoration: none;
+}
+
+.menu__link--nv2:hover {
+background: {{ color_one }};
+color: #fff;
+text-decoration: none;
+}
+}

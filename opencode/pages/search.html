@@ -1,88 +1,66 @@
-{% if products|length > 0 %}
-<ul class="breadcrumb col-xs-12">
-    <li class="breadcrumb__text">Você está em:</li>
-    <li><a href="{{ links.home }}" class="breadcrumb__link home">P&#225;gina Inicial</a></li>
-    {% if breadcrumb %}
-        {% for item in breadcrumb %}
-            <li><a href="{{ item.link }}" class="breadcrumb__link" title="{{ item.name }}">{{ item.name|slice(0,70) }}</a></li>
-        {% endfor %}
-    {% endif %}
-    <li class="breadcrumb__text">Buscando por {{ search.word }}</li>
-</ul>
-<aside class="smart_filter col-xs-3 visible-lg">
-    <button class="mobileFilter btn btn-primary pull-right hidden-lg">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </button>
-    <div class="categories">
-        <div class="categories__title">
-            Categoria
-        </div>
-        <ul class="categories__list">
-
-            {% for cat in categories %}
-            <li class="categories__item categories__item--01">
-                <a href="{{ cat.link }}" class="categories__link categories__link--01">{{ cat.name }}</a>
-                {% if cat.children %}
-                <ul class="categories__sub">
-                    {% for child in cat.children %}
-                    <li class="categories__item categories__item--02">
-                        <a href="{{ child.link }}" class="categories__link categories__link--02">{{ child.name }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </li>
-            {% endfor %}
-
-        </ul>
+{% if banner.title %}
+    <div class="banner banner--page-category">
+        {{ banner.title }}
     </div>
-    {% element('snippets/smart_filter') %}
-</aside>
-
-<section class="products-categorys col-xs-12 col-lg-9">
-        <div class="row">
-            {% if banner.title %}
-            <div class="banner-title">{{ banner.title }}</div>
-            {% endif %}
-    
-            <div class="category__description">
-                {{ category.small_description }}
-            </div>
-            
-            <div class="col-xs-12 pagination-search-and-category top">
-                <button class="mobileFilter btn btn-primary pull-left hidden-lg" data-id="sm-filter">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                    Filtro
-                </button>
-                
-                <span class="catalogo-display">{{ paginate.counter('Resultado <strong>{:count} Produtos</strong> em <strong>{:pages} Páginas</strong>') }}</span>
-      
-                <div class="filter-category">
-                    {% element 'snippets/filter' {'brands': category.brands } %}
-                </div>
-                {% if not paginateInfinite %}
-                    {% element 'snippets/pagination' %}
-                {% endif %}
-            </div>
-    
-            <div class="products col-xs-12">
-    
-                {% element 'snippets/showcase' {"products": products, "showcaseClass": "showcase__list--infinite"} %}
-    
-                {% if paginateInfinite %}
-                    <div class="paginates">
-                        {% element 'snippets/pagination' %}
-                    </div>
-                {% endif %}
-            </div>
-        </div>
-        
-        <div class="col-xs-12 pagination-search-and-category bottom">
-            <span class="catalogo-display">{{ paginate.counter('Resultado <strong>{:count} Produtos</strong> em <strong>{:pages} Páginas</strong>') }}</span>
-            
-            {% element 'snippets/pagination' %}
-        </div>
-    </section>
-{% else %}
-<p class="message--no-products">Nenhum produto encontrado.</p>
 {% endif %}
+
+{% if breadcrumb %}
+    {% element 'snippets/breadcrumb' %}
+{% endif %}
+
+<div class="page-catalog__main">
+
+    <h1 class="page-catalog__title title title--big">{{ category.name }}</h1>
+
+    {% if category.small_description %}
+    <div class="page-catalog__description">
+        {{ category.small_description }}
+    </div>
+    {% endif %}    
+    
+
+    <div class="page-catalog__container">
+        {% if products|length > 0 %}
+            {% element 'sidebar-left' %}
+        {% endif %} 
+
+        {% if products|length > 0 %}
+            <div class="page-catalog__content">
+
+                <div class="page-catalog__toolbar page-catalog__toolbar--top">
+                    {% element 'snippets/toolbar' {
+                        'brands': category.brands,
+                        'position': 'top'
+                    } %}
+                </div>
+
+
+                <div class="page-catalog__list">
+                    {% element 'showcase' {
+                        "products": products,
+                        "carousel": "false"
+                    } %}
+                </div>
+
+                <div class="page-catalog__toolbar page-catalog__toolbar--bottom">
+                    {% element 'snippets/toolbar' {
+                        'brands': category.brands,
+                        'position': 'bottom'
+                    } %}
+                </div>
+            </div>
+        {% else %}
+            
+            <div class="page-catalog__main page-catalog__main--empty">
+                <img src="{{ asset('img/page-catalog-empty.svg') }}" alt="Sem produtos" width="150" height="150">
+                <p>{{ Translation('nenhum_resultado') }}</p>
+            </div>
+
+        {% endif %}
+    </div>
+    {% if banner.bottom %}
+        <div class="banner banner--bottom ">
+            {{ banner.bottom }}
+        </div>
+    {% endif %}
+</div>

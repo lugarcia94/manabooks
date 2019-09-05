@@ -1,0 +1,36 @@
+{% set class = '' %}
+{% if modifier %}{% set class = " customer--" ~ modifier %}{% endif %}
+<div class="customer{{ class }}">
+    <div class="customer__container">
+        <div class="customer__header">
+            <a class="customer__link customer__link--icon" href="{{ links.central }}" data-tray-tst="meu_cadastro">
+                {% element 'snippets/icon' {
+                    'name': 'user',
+                    'width': '28',
+                    'height': '28'
+                } %}
+            </a>
+        </div>
+        <div class="customer__main">
+            <div class="tray-hide" data-logged-user="true">
+                <div class="customer__label">
+                    <span data-customer="name"></span>
+                </div>
+                <div class="customer__links">
+                    <a href="{{ links.orders }}" data-tray-tst="meus_pedidos">{{ Translation('meus_pedidos') }}</a>
+                    / <a href="{{ links.logout }}" data-tray-tst="logout">{{ Translation('sair') }}</a>
+                </div>
+            </div>
+            <div class="tray-hide" data-logged-user="false">
+                <div class="customer__label">
+                    <a href="{{ links.login }}" data-tray-tst="login"
+                        class="{{ utils.is_https ? 'modal-login' }}">Entrar</a>
+                    / <a href="{{ links.register }}" data-tray-tst="cadastro">{{ Translation('Cadastrar') }}</a>
+                </div>
+                <div class="customer__links">
+                    <a href="{{ links.orders }}" data-tray-tst="meus_pedidos">{{ Translation('meus_pedidos') }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

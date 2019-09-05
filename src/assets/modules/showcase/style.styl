@@ -1,0 +1,42 @@
+.showcase 
+    &__header 
+        padding: 30px 0 20px
+        margin-bottom: 20px 
+        text-align center
+
+    &__title 
+        position relative
+        display: inline-block
+        font-size: 30px
+        color: #211915
+        font-weight: 600
+        text-align: center 
+
+        &:before
+            content ''
+            height: 3px
+            width: 100%
+            position: absolute
+            bottom: 0   
+            background color
+
+    &__list 
+        display: flex 
+        justify-content: space-between
+        align-items: stretch
+        flex-flow: row wrap
+        min-width: 100%
+
+        margin: -(gutter / 2)
+
+    &__item 
+        flex: 1 1 254px
+        padding: (gutter / 2)
+
+
+@media (min-width: (viewport + 100))
+    .showcase 
+        .slick-prev 
+            left: -50px
+        .slick-next 
+            right: -50px

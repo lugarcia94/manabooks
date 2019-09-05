@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 28" width="27" height="28">
+	<defs>
+		<image width="27" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAMAAACnDzTfAAAAAXNSR0IB2cksfwAAAN5QTFRFZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiZ2KiX7Qz/wAAAEp0Uk5TAzgAHvO/MBeb+y3CdI20WPEEJP/ueLjjsKSFzU5cGuUGefYSe5dG/ifbQnrQOvJPFWTA+HBeEEW91M4df5O+pmOJpQ2utwkcIh8n6FThAAAA00lEQVR4nHXQ1xKCMBAFUFwb9oIKdgVU7L33rv//Q5JIEElyn+7kTCa7EQQP8CJ4ff4AzyAohsI8A4hE+RaL8y2RTHEtLbFnRQaZLN9yssJIHltBYqWIrcS0MrYKi6o1bFBlWP07Cyg0qZplOm0NawdoUtQyiGmUxcnuAG23dWzrqi7q2X/WHwwD/xnZNp7w/9qYxmbOzBc/g+UKPbKeoGzMJm9/BlFrXTM7VPcOE9HBAdcjWY/YCR2ccZ2hqjtMuJjXrrjWbpJ0fzgM4PmyZ39b9QMJRCVnMi1upAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Topo">
+		<g id="Header info">
+			<use id="Carrinho icon" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

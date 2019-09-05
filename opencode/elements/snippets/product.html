@@ -1,80 +1,44 @@
-<li class="showcase__item" itemscope itemtype="http://schema.org/SomeProducts">
-    <div class="border{% if not product.available %} off{% endif %}">
-        <figure class="product-image">
-            <a href="{{ product.link }}">
-                <img class="img-responsive" src="{{ product.images[0].full }}" alt="{{ product.name }}">
+<article class="product">
+
+    <div class="product__header">
+        <figure class="product__figure">
+            {% if product.images %}
+            <a class="product__link" href="{{ settings.buy_to_cart ? links.cart_add ~ product.id : product.link }}"
+                data-tray-tst="vitrine_produto_link_imagem">
+                <img class="product__image" src="{{ product.images[0].full }}" alt="{{ product.name }}"
+                    title="{{ product.name }}">
             </a>
+            {% else %}
+            <a class="product__link" href="{{ settings.buy_to_cart ? links.cart_add ~ product.id : product.link }}"
+                data-tray-tst="vitrine_produto_link_imagem">
+                <img class="product__image" src="{{ asset('img/no-image.svg') }}" alt="Nenhuma imagem foi cadastrada"
+                    width="100" title="{{ product.name }}">
+            </a>
+            {% endif %}
         </figure>
 
-        {% set percent = 100 - ( product.price_offer / product.price ) * 100 %}
-        {% if percent > 1 and percent < 100 %}
-            <div class="product__offer">
-                <div class="product__offer--relativo">
-                    <span class="product__label--offer">-{{ percent|number_format }}%</span>
-                </div>
-            </div>
+        {% if settings.discount %}
+        {% set porcentagemDesconto = 100 - ( product.price_offer / product.price ) * 100 %}
+        {% if porcentagemDesconto < 100 %}
+        <span class="discount"> {{ porcentagemDesconto|number_format }}% de desconto </span>
         {% endif %}
-
-        {% if product.available %}
-            <div class="labels">
-                {% if product.free_shipping %}
-                    {% if Image('free_shipping') %}
-                        <span class="free-shipping">{{ Image('free_shipping') }}</span>
-                    {% else %}
-                        <span class="label free-shipping">Frete Gr&#225;tis</span>
-                    {% endif %}
-                {% endif %}
-
-                {% if product.new %}
-                    {% if Image('new') %}
-                        <span class=" botao-new">{{ Image('new') }}</span>
-                    {% else %}
-                        <span class="label new">Novidade</span>
-                    {% endif %}
-                {% endif %}
-
-                {% if product.featured %}
-                    {% if Image('featured') %}
-                        <span class="featured">{{ Image('featured') }}</span>
-                    {% else %}
-                        <span class="label featured">Destaque</span>
-                    {% endif %}
-                {% endif %}
-            </div>
-        {% endif %}
-    
-        <h3 class="product-name" itemprop="name">
-            <a href="{{ product.link }}">{{ product.name|slice(0,80) }}</a>
-        </h3>
-        
-        <div class="product__rating">
-            <span class="star{{ product.ranking.rating }}"></span>
-        </div>
-
-        {% if product.available %}
-        <div class="product__prices">
-            {% if product.price_offer > 0 %}
-            <em class="preco-de">de R$ {{ product.price|currency }}</em>
-            <strong class="preco-por">por R$ {{ product.price_offer|currency }}</strong>
-            {% else %}
-            <span class="preco-de"></span>
-            <strong class="preco-por"> R$ {{ product.price|currency }}</strong>
-            {% endif %}
-        </div>
-
-        <div class="formas-pagamento-box">{{ product.payment }}</div>
-
-        <div class="showcase__buy">
-            <a class="buy__button" href="{{ product.link }}">Comprar</a>
-            <button class="quick__button" data-quickview-button type="button" data-id="{{ product.id }}">
-                <svg id="icon-eye" viewBox="0 0 32 32"><title>eye</title><path d="M16 6c-6.979 0-13.028 4.064-16 10 2.972 5.936 9.021 10 16 10s13.027-4.064 16-10c-2.972-5.936-9.021-10-16-10zM23.889 11.303c1.88 1.199 3.473 2.805 4.67 4.697-1.197 1.891-2.79 3.498-4.67 4.697-2.362 1.507-5.090 2.303-7.889 2.303s-5.527-0.796-7.889-2.303c-1.88-1.199-3.473-2.805-4.67-4.697 1.197-1.891 2.79-3.498 4.67-4.697 0.122-0.078 0.246-0.154 0.371-0.228-0.311 0.854-0.482 1.776-0.482 2.737 0 4.418 3.582 8 8 8s8-3.582 8-8c0-0.962-0.17-1.883-0.482-2.737 0.124 0.074 0.248 0.15 0.371 0.228v0zM16 13c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"></path></svg>
-            </button>
-        </div>
-
-        {% else %}
-        <div class="labels">
-            <span class="label label-default unavailable">Indispon&#237;vel</span>
-        </div>
         {% endif %}
     </div>
-</li>
+
+    <div class="product__main">
+        <h1 class="product__name"><a class="product__link"
+                href="{{ settings.buy_to_cart ? links.cart_add ~ product.id : product.link }}"
+                data-tray-tst="vitrine_produto_link_imagem">{{ product.name }}</a></h1>
+
+        <div data-module="pricing" data-snippet="snippets/product-payment" data-product-id="{{ product.id }}">
+            <div class="pricing">
+                Carregando...
+            </div>
+        </div>
+    </div>
+
+    <div class="product__actions">
+
+    </div>
+
+</article>

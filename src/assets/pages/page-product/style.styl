@@ -1,0 +1,224 @@
+#visualAbas, #visualBlock #add, .bonus_produto:empty
+    display: none 
+
+#col3D, #colFotos, #colVideo, #foto_p, #preco, .prodBox, .onVar, .onVar:hover
+    background: none 
+    border: 0
+
+.varTit
+    padding: 5px 0
+
+    &, &:hover
+        font-size: 14px
+        font-weight: reuglar 
+        color: #333
+        background: none 
+
+.precoCompreJunto
+    border: 0
+
+.varCont
+    padding: 5px 0
+    border: 0
+    
+#preco
+    border: 0 
+    padding: 0
+
+#linkPagParcelado
+    display: inline-block 
+    padding: 10px 20px
+    border: 0
+    font-size: 14px
+    font-weight: regular 
+    background: rgba(0,0,0, .5)
+    color: #ffffff
+
+#bloco-add-lista 
+    margin: 0
+    border: 0
+    a
+        display: flex 
+        justify-content: center 
+        align-items: center
+        height: 30px
+        padding: 5px
+        border: solid 1px rgba(0,0,0,.1)
+        font-size: 10px
+        font-weight: regular
+        text-transform: uppercase
+
+#cepbox
+    margin: 0
+    padding: 10px 0 20px
+    border: 0
+    
+    input 
+        display: inline-block 
+        vertical-align: middle
+
+    label 
+        display: none 
+
+    .cepbox-text
+        font-size: 14px
+        text-transform: uppercase 
+        padding: 10px 0
+
+    .botao-simular-frete
+        display: inline-flex 
+        justify-content: center 
+        align-items: center 
+        vertical-align: middle
+        width: 80px
+        height: 45px
+        margin-top: -2px
+        margin-left: 10px   
+        background: rgba(0,0,0,.5)
+        font-size: 0 
+        color: #fff 
+        border: 0
+        border-radius: 0
+        &:before 
+            content: 'Calcular'
+            font-size: 12px
+
+.botao-comprar 
+    width: 100% 
+
+    .botao-commerce-img
+        background: none 
+        width: 100% 
+        height: 45px 
+        padding: 0
+
+#nao_disp
+    padding: (gutter / 2)
+    border: solid 1px rgba(0,0,0,.05)
+
+    h5 
+        margin: 20px 0 0 
+        font-size: 14px
+        font-weight: bold 
+        text-transform: uppercase 
+
+.page-product 
+    &__labels 
+        display: block 
+        padding: 10px 0
+
+        #botoes 
+            margin: -10px
+
+    &__details 
+        #info 
+            display: none 
+
+    &__image 
+        position: relative 
+        z-index: 10
+
+        // Ajuste Zoom
+
+        #wrap
+            display: inline-block 
+            position: relative
+
+        #cloud-zoom-big 
+            z-index: 100!important
+            min-width: 100% 
+            min-height: 100%
+            left: 0 !important
+            margin-left: 0 !important
+            background-color: #fff
+
+    &__name 
+        font-size: 32px
+        font-weight: bold
+        line-height: 1.2
+        padding-bottom: 15px
+
+    &__head 
+        display: flex 
+        justify-content: space-between
+        font-size: 14px
+        padding: 10px 0
+
+    &__links 
+        display: flex 
+        flex-flow: row wrap
+        margin: 10px -5px
+
+        &-item
+            flex: 1 1 50%
+            padding: 5px
+
+            a 
+                display: flex 
+                justify-content: center 
+                align-items: center
+                height: 30px
+                padding: 5px
+                border: solid 1px rgba(0,0,0,.1)
+                font-size: 10px
+                text-transform: uppercase
+
+            &--compare 
+                input 
+                    display: none 
+
+    &__actions 
+        .passo1, #product-form-box
+            display: flex 
+
+        #product-form-box
+            width: 100% 
+
+        #quantidade 
+            font-size: 0 
+            padding: 0 
+            margin: 0 (gutter / 2) 0 0
+            border: 0
+            max-width: 100px
+            flex: 0 0 auto
+
+        #quant
+            width: 100% 
+            font-size: 14px
+            text-align: center
+
+        #bt_comprar
+            flex: 1
+            min-width: 0
+
+.texto_variacao
+    display: flex 
+    padding: 0 
+    h2, span
+        float: none 
+        width: auto
+        margin-right: 5px
+
+    h2:after 
+        content: ': '
+
+.lista_cor_variacao
+    padding: 10px 0 
+    
+
+@media desktop 
+    .page-product 
+        &__essential 
+            display: grid
+            grid-template-areas: "image header" "image details"
+            grid-template-columns: 1fr 50%
+            grid-template-rows: auto 1fr
+
+        &__image 
+            grid-area: image 
+
+        &__header 
+            grid-area: header 
+            
+        &__details 
+            grid-area: details
