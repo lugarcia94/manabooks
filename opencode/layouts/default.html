@@ -53,14 +53,15 @@
 
     <div class="wrapper">
         <div class="wrapper__container">
-            {% element 'header' %} {% if pages.current == 'home' %} {%
-                element 'snippets/banner' {'name': 'home'} %} {% endif %}
+            {% element 'header' %}
 
             <main class="main">
                 <div class="main__container">
+                    {% if pages.current == 'home' %}
+                    {% element 'snippets/banner' {'name': 'home'} %}
+                    {% endif %}
+
                     {{ content_for_layout }}
-
-
                 </div>
             </main>
 

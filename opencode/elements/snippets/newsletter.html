@@ -1,19 +1,22 @@
 <section class="newsletter" data-tray-tst="newsletter_box">
     <div class="newsletter__container">
         <header class="newsletter__header">
-            <h1 class="newsletter__title">QUER NOVIDADES <span>E PROMOÇÕES?</span></h1>
-            <h2 class="newsletter__description">Cadastre-se na nossa Newsletter</h2>
+            <h1 class="newsletter__title">Cadastre-se na nossa Newsletter</h1>
+            <h2 class="newsletter__description">e fique por dentro das novidade</h2>
         </header>
         <div class="newsletter__main">
-            <form class="newsletter__form" action="{{ links.newsletter }}" method="post" name="newsletter" data-tray-tst="newsletter_form">
+            <form class="newsletter__form" action="{{ links.newsletter }}" method="post" name="newsletter"
+                data-tray-tst="newsletter_form">
                 <div class="newsletter__box">
-                    <input class="newsletter__input" name="name" type="text" placeholder="{{ Translation('digitar_nome') }}" required>
+                    <input class="newsletter__input" name="name" type="text"
+                        placeholder="{{ Translation('digitar_nome') }}" required>
                 </div>
                 <div class="newsletter__box">
-                    <input class="newsletter__input" name="email" type="email" placeholder="{{ Translation('digitar_email') }}" data-tray-tst="newsletter_email" required>
+                    <input class="newsletter__input" name="email" type="email"
+                        placeholder="{{ Translation('digitar_email') }}" data-tray-tst="newsletter_email" required>
                 </div>
                 <div class="newsletter__actions">
-                    <button class="newsletter__button" data-tray-tst="newsletter_cadastrar">Quero me cadastrar</button>
+                    <button class="newsletter__button" data-tray-tst="newsletter_cadastrar">Cadastrar</button>
                 </div>
             </form>
         </div>

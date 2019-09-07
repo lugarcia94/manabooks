@@ -1595,8 +1595,30 @@ button.clear {
     opacity: 1;
     visibility: visible;
   }
+  .menu--navigation .menu__item--nv2:hover .menu--nv3 {
+    opacity: 1;
+    visibility: visible;
+  }
   .menu--navigation .menu__item--nv1 {
     position: relative;
+  }
+  .menu--navigation .menu__item--nv1:hover .menu__link--nv1:before {
+    content: '';
+    height: 3px;
+    background: #6762a2;
+    width: 100%;
+    position: absolute;
+    top: 93%;
+    left: 0;
+  }
+  .menu--navigation .menu__link {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #211915;
+  }
+  .menu--navigation .menu__link:hover {
+    text-decoration: none;
   }
   .menu--navigation .menu__link--nv1 {
     display: inline-block;
@@ -1612,12 +1634,23 @@ button.clear {
   }
   .menu--navigation .menu--nv2 {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
     min-width: 250px;
     opacity: 0;
     visibility: hidden;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 1px #6762a2;
+    border-radius: 4px;
+  }
+  .menu--navigation .menu--nv3 {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
   }
   .menu--navigation .menu--rtl {
     left: auto;
@@ -1931,10 +1964,52 @@ button.clear {
 .product__image {
   display: block;
   width: 100%;
-  height: 340px;
+  height: 260px;
   -o-object-fit: contain;
      font-family: "object-fit:contain";
      object-fit: contain;
+}
+.product__name {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 600;
+  height: 38px;
+  overflow: hidden;
+}
+.product__name a {
+  color: #211915;
+}
+.product__name:hover a {
+  color: #6762a2;
+}
+.product .prices {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+.product .prices__container .prices__old {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  color: #808080;
+  text-decoration: line-through;
+}
+.product .prices__out {
+  min-height: 60px;
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product__payment {
+  font-size: 15px;
+  line-height: normal;
+  font-weight: 700;
+  color: #6762a2;
+}
+.product__payment br {
+  display: none;
 }
 
 @-webkit-keyframes slideOpen {
@@ -2002,31 +2077,30 @@ button.clear {
   }
 }
 .newsletter {
+  background: #ededed;
+}
+.newsletter__container {
   width: 100%;
   max-width: 1300px;
   padding: 0 15px;
   margin: 30px auto;
-}
-.newsletter__container {
   padding: 30px 0;
-  border-top: solid 1px rgba(0,0,0,0.1);
-  border-bottom: solid 1px rgba(0,0,0,0.1);
 }
 .newsletter__header {
   text-align: center;
   margin-bottom: 15px;
 }
 .newsletter__title {
-  font-size: 22px;
+  flex: 0 0 100%;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.2;
-}
-.newsletter__title span {
-  display: block;
-  font-size: 26px;
+  line-height: normal;
 }
 .newsletter__form {
   margin: -5px;
+}
+.newsletter__form input:placeholder {
+  font-style: italic;
 }
 .newsletter__box,
 .newsletter__actions {
@@ -2035,9 +2109,13 @@ button.clear {
 .newsletter__description {
   font-size: 14px;
 }
+.newsletter__input {
+  border: 1px solid #6762a2 !important;
+}
 .newsletter__input,
 .newsletter__button {
   width: 100%;
+  border-radius: 10px;
 }
 .newsletter__button {
   padding: 0 15px;
@@ -2063,14 +2141,21 @@ button.clear {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin: -15px;
     text-align: left;
+    flex: 0 0 330px;
   }
   .newsletter__title,
-  .newsletter__description,
+  .newsletter__description {
+    padding: 0 15px;
+  }
   .newsletter__box,
   .newsletter__actions {
     padding: 15px;
+  }
+  .newsletter__actions {
+    flex: 0 0 145px;
   }
   .newsletter__main {
     flex: 1;
@@ -2144,7 +2229,9 @@ button.clear {
   }
 }
 .rulers {
-  border: solid 1px rgba(0,0,0,0.1);
+  border-bottom: solid 1px rgba(0,0,0,0.1);
+  margin-bottom: 36px;
+  padding: 10px 0 26px;
 }
 .rulers__box {
   display: inline-flex;
@@ -2153,16 +2240,26 @@ button.clear {
   padding: 10px;
   text-align: left;
 }
+.rulers__list:not(slick-slider) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .rulers__item {
   text-align: center;
-}
-.rulers__item--ticket {
-  background: rgba(0,0,0,0.1);
 }
 .rulers__icon {
   font-size: 25px;
   width: 25px;
   margin-right: 15px;
+}
+.rulers__title {
+  font-size: 14px;
+  line-height: normal;
+  color: #211915;
+}
+.rulers__title strong {
+  display: block;
 }
 .rulers .slick-arrow {
   position: static;
@@ -2407,6 +2504,9 @@ button.clear {
     opacity: 0;
   }
 }
+.rating-short {
+  margin-bottom: 8px;
+}
 .rating-short__container {
   margin: -2px;
 }
@@ -2416,6 +2516,9 @@ button.clear {
 }
 .rating-short__star--actived {
   color: #000;
+}
+.rating-short__votes {
+  display: none;
 }
 
 @-webkit-keyframes slideOpen {
@@ -3985,7 +4088,7 @@ button.clear {
   max-width: 1300px;
   padding: 0 15px;
   margin: 0 auto;
-  padding: 50px 15px;
+  padding: 15px;
 }
 .footer__row {
   display: flex;
@@ -3997,14 +4100,36 @@ button.clear {
   flex: 0 1 240px;
   padding: 15px;
 }
+.footer__box--security-title {
+  flex: 0 1 200px;
+}
 .footer__title {
   padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
 }
 .footer__contact-icon {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
   font-size: 20px;
+}
+.footer__custom-link {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 500;
+  color: #211915;
+}
+.footer__custom-link:hover {
+  color: #6762a2;
+}
+.payments__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.payments__item {
+  padding: 3px;
+  width: 40px;
 }
 
 @-webkit-keyframes slideOpen {
@@ -4622,9 +4747,15 @@ button.clear {
 .page-home__banner-list {
   display: flex;
   margin: 0 -15px;
+  flex-wrap: wrap;
 }
 .page-home__banner-item {
   padding: 15px;
+  flex: 1;
+  min-width: 0px;
+}
+.page-home__banner--grid {
+  margin-top: 90px;
 }
 
 @-webkit-keyframes slideOpen {

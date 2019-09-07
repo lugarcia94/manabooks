@@ -83,17 +83,42 @@
                             .menu--nv2
                                 opacity: 1 
                                 visibility: visible
+                          
+                    &--nv2
+                        &:hover
+                            .menu--nv3
+                                opacity: 1 
+                                visibility: visible
+                                    
 
                     &--nv1
                         position: relative
-
+                        
+                        &:hover
+                            .menu__link--nv1
+                                &:before 
+                                    content: ''
+                                    height: 3px
+                                    background: color
+                                    width: 100%
+                                    position: absolute
+                                    top: 93%
+                                    left: 0
+                        
                 &__link
+                    font-size 16px
+                    line-height normal
+                    font-weight 600
+                    color #211915
+
+                    &:hover
+                        text-decoration none
+
                     &--nv1
                         display: inline-block
                         padding: (gutter / 2)
 
                         white-space: nowrap
-
                     &--nv2 
                         display: block
                         padding: 5px (gutter / 2)
@@ -103,14 +128,29 @@
 
                 &--nv2
                     position: absolute 
-                    left: 0
+                    left: 50%
+                    transform translateX(-50%)
+                    top 100%
 
-                    min-width: 250px;
+                    min-width: 250px
                     opacity: 0 
                     visibility: hidden
 
                     background: #fff 
-                    box-shadow: 0 0 10px rgba(0,0,0,.1)
+                    box-shadow: 0 0 0 1px color 
+
+                    border-radius: 4px
+
+                &--nv3
+                    position absolute
+                    right 0
+                    top 0px
+                    
+                    height 100%
+
+                    opacity: 0 
+                    visibility: hidden
+                    
 
                 &--rtl 
                     left: auto

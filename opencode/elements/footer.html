@@ -1,21 +1,22 @@
 <footer class="footer">
-    
+
     <div class="footer__container">
         <div class="footer__row">
             <div class="footer__box footer__box--institutional">
                 <h3 class="footer__title title title--small">{{ Translation('institucional') }}</h3>
                 <ul class="footer__custom">
                     {% for custom in pages.custom %}
-                        <li class="footer__custom-item">
-                            <a class="footer__custom-link" href="{{ custom.url }}">{{ custom.name }}</a>
-                        </li>
+                    <li class="footer__custom-item">
+                        <a class="footer__custom-link" href="{{ custom.url }}">{{ custom.name }}</a>
+                    </li>
                     {% endfor %}
                     <li class="footer__custom-item">
-                        <a class="footer__custom-link" href="{{ links.contact }}" data-tray-tst="fale_conosco">{{ Translation('contato') }}</a>
+                        <a class="footer__custom-link" href="{{ links.contact }}"
+                            data-tray-tst="fale_conosco">{{ Translation('contato') }}</a>
                     </li>
                 </ul>
             </div>
-            
+
             {%
                 if 
                 Translation('ag_atendimento') != '' or
@@ -25,33 +26,33 @@
                 Translation('ag_email_2') != ''
             %}
             <div class="footer__box">
-                <h3 class="footer__title title title--small">{{ Translation('contato') }}</h3>
+                <h3 class="footer__title title title--small">Atendimento</h3>
                 <ul>
                     {% if Translation('ag_atendimento') != '' %}
                     <li class="footer__text" data-tray-tst="horario_atendimento">
                         {{ Translation('ag_atendimento') }}
                     </li>
                     {% endif %}
-                    
+
                     {% if Translation('ag_telefone_1') != '' or Translation('ag_telefone_2') != '' %}
                     <li class="footer__contact">
                         <div data-tray-tst="contato_telefone">
                             {% if Translation('ag_telefone_1') != '' %}
-                                <div class="footer__contact-item footer__contact-item--phone">
-                                    <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
-                                    <span class="footer__contact-label">{{ Translation('ag_telefone_1') }}</span>
-                                </div>
+                            <div class="footer__contact-item footer__contact-item--phone">
+                                <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
+                                <span class="footer__contact-label">{{ Translation('ag_telefone_1') }}</span>
+                            </div>
                             {% endif %}
                             {% if Translation('ag_telefone_2') != '' %}
-                                <div class="footer__contact-item footer__contact-item--phone">
-                                    <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
-                                    <span class="footer__contact-label">{{ Translation('ag_telefone_2') }}</span>
-                                </div>
+                            <div class="footer__contact-item footer__contact-item--phone">
+                                <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
+                                <span class="footer__contact-label">{{ Translation('ag_telefone_2') }}</span>
+                            </div>
                             {% endif %}
                         </div>
                     </li>
                     {% endif %}
-                    
+
                     {% if Translation('ag_email_1') != '' or Translation('ag_email_2') != '' %}
                     <li class="footer__contact">
                         <div data-tray-tst="contato_email">
@@ -73,7 +74,12 @@
                 </ul>
             </div>
             {% endif %}
-            
+
+            <div class="footer__box">
+                <h3 class="footer__title title title--small">Formas de Pagamento</h3>
+                {% element 'snippets/payments' %}
+            </div>
+
             {% if settings.facebook or 
                 settings.twitter or 
                 settings.whatsapp or
@@ -87,21 +93,19 @@
                 {% element 'snippets/socials' %}
             </div>
             {% endif %}
-            
-            <div class="footer__box">
-                <h3 class="footer__title title title--small">{{ Translation('pagamento') }}</h3>
-                {% element 'snippets/payments' %}
-                
+
+            <div class="footer__box footer__box--security-title">
+                <h3 class="footer__title title title--small">{{ Translation('seguranca') }}</h3>
+
                 {% if seals.ebit or seals.hackersafe %}
-                    <h3 class="security-title">{{ Translation('seguranca') }}</h3>
-                    <ul class="foo-seals">
-                        {% if seals.ebit %}
-                        <li class="seal-ebit pull-left">{{ seals.ebit }}</li>
-                        {% endif %}
-                        {% if seals.hackersafe %}
-                        <li>{{ seals.hackersafe }}</li>
-                        {% endif %}
-                    </ul>
+                <ul class="foo-seals">
+                    {% if seals.ebit %}
+                    <li class="seal-ebit pull-left">{{ seals.ebit }}</li>
+                    {% endif %}
+                    {% if seals.hackersafe %}
+                    <li>{{ seals.hackersafe }}</li>
+                    {% endif %}
+                </ul>
                 {% endif %}
             </div>
         </div>

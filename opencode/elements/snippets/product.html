@@ -23,12 +23,18 @@
         <span class="discount"> {{ porcentagemDesconto|number_format }}% de desconto </span>
         {% endif %}
         {% endif %}
+
     </div>
 
     <div class="product__main">
-        <h1 class="product__name"><a class="product__link"
-                href="{{ settings.buy_to_cart ? links.cart_add ~ product.id : product.link }}"
-                data-tray-tst="vitrine_produto_link_imagem">{{ product.name }}</a></h1>
+        <h1 class="product__name">
+            <a class="product__link" href="{{ settings.buy_to_cart ? links.cart_add ~ product.id : product.link }}"
+                data-tray-tst="vitrine_produto_link_imagem">
+                {{ product.name }}
+            </a>
+        </h1>
+
+        {% element 'snippets/rating-short' { 'product': product } %}
 
         <div data-module="pricing" data-snippet="snippets/product-payment" data-product-id="{{ product.id }}">
             <div class="pricing">

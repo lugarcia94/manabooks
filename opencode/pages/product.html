@@ -1,13 +1,7 @@
-{% if banner.title %}
-    <div class="banner banner--product">
-        {{ banner.title }}
-    </div>
-{% endif %}
-
 {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
 
 <section class="page-product__essential" itemscope itemtype="http://schema.org/Product">
-    
+
 
     <div class="page-product__header">
         <h1 class="page-product__name" itemprop="name">{{ product.name }}</h1>
@@ -15,7 +9,7 @@
         <div class="page-product__short-review">
             {% element 'snippets/rating-short' { 'product': product } %}
         </div>
-        
+
         <div class="page-product__head">
             {% if product.brand %}
             <div class="page-product__brand">
@@ -28,19 +22,20 @@
             </div>
             {% endif %}
         </div>
-    
+
     </div>
 
     <div class="page-product__image">
 
         {% if product.images %}
-            <div id="visualBlock" class="page-product__gallery {{ product.images|length  <= 1 and not product.video ? 'hide-carousel' }}">
-                {{ productHelper.gallery() }}
-            </div>
+        <div id="visualBlock"
+            class="page-product__gallery {{ product.images|length  <= 1 and not product.video ? 'hide-carousel' }}">
+            {{ productHelper.gallery() }}
+        </div>
         {% else %}
-            <div class="product-product__gallery page-product__gallery--no-image">
-                <img src="{{ asset('img/no-image.svg') }}" alt="Nenhuma imagem foi cadastrada">
-            </div>
+        <div class="product-product__gallery page-product__gallery--no-image">
+            <img src="{{ asset('img/no-image.svg') }}" alt="Nenhuma imagem foi cadastrada">
+        </div>
         {% endif %}
 
         <div class="page-product__labels">
@@ -55,7 +50,7 @@
         {{ productHelper.bonus() }}
 
         <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
-            
+
             {% if product.available != 0 %}
             {{ productHelper.variants() }}
             {% endif %}
@@ -69,10 +64,10 @@
             {{ productHelper.gifts() }}
             {{ product.additional_information }}
             <div class="page-product__actions">
-            {{ productHelper.form() }}
+                {{ productHelper.form() }}
             </div>
             {{ productHelper.kit() }}
-            
+
             {{ productHelper.shipping() }}
 
             {% if product.additional_message %}
@@ -84,23 +79,27 @@
 
         <ul class="page-product__links">
             <li class="page-product__links-item page-product__links-item--friend">
-                <a class="page-product__links-link" data-url="{{ links.product_recommend }}&IdProd={{ product.id }}" data-title="{{ product.name }}" data-toggle="modal" data-target="#modal-form" data-modal-width="600px" href="#">{{ Translation('indique_amigo') }}</a>
+                <a class="page-product__links-link" data-url="{{ links.product_recommend }}&IdProd={{ product.id }}"
+                    data-title="{{ product.name }}" data-toggle="modal" data-target="#modal-form"
+                    data-modal-width="600px" href="#">{{ Translation('indique_amigo') }}</a>
             </li>
 
             <li class="page-product__links-item page-product__links-item--help">
-                <a class="page-product__links-link" data-url="{{ links.product_question }}&IdProd={{ product.id }}" data-title="{{ product.name }}" data-toggle="modal" data-target="#modal-form" data-modal-width="600px" href="#">{{ Translation('tire_duvidas') }}</a>
+                <a class="page-product__links-link" data-url="{{ links.product_question }}&IdProd={{ product.id }}"
+                    data-title="{{ product.name }}" data-toggle="modal" data-target="#modal-form"
+                    data-modal-width="600px" href="#">{{ Translation('tire_duvidas') }}</a>
             </li>
 
             <li class="page-product__links-item page-product__links-item--compare">
                 <span class="page-product__links-link" id="product-compare">
-                {% if settings.compare %}
+                    {% if settings.compare %}
                     <span id="comparar">
                         {% element 'product/compare' {
                             'product': product,
                             'links': links
                         } %}
                     </span>
-                {% endif %}
+                    {% endif %}
                 </span>
             </li>
             {% if not product.upon_request and product.available %}
@@ -111,9 +110,9 @@
         </ul>
 
         {% if settings.social_position == 0 %}
-            <div class="page-product__share">
-                {% element 'snippets/share' { "product": product } %}
-            </div>
+        <div class="page-product__share">
+            {% element 'snippets/share' { "product": product } %}
+        </div>
         {% endif %}
 
     </div>
@@ -131,9 +130,9 @@
     <h3 class="related-title">{{ Translation('produtos_relacionados') }}</h3>
     <div class="row">
         {% for related in product.related_products %}
-            <div class="col-sm-3">
-                {% element 'snippets/product' {"product": related} %}
-            </div>
+        <div class="col-sm-3">
+            {% element 'snippets/product' {"product": related} %}
+        </div>
         {% endfor %}
     </div>
 </section>
@@ -141,19 +140,19 @@
 
 <div id="prognoos_ib"></div>
 {% if settings.history_position == 1 %}
-    <section class="products-visited col-sm-12">
-        <h4>{{ Translation('confira_tambem') }}</h4>
-        <h3 class="related-title">{{ Translation('produtos_visitados') }}</h3>
-        {% element 'snippets/history' {
+<section class="products-visited col-sm-12">
+    <h4>{{ Translation('confira_tambem') }}</h4>
+    <h3 class="related-title">{{ Translation('produtos_visitados') }}</h3>
+    {% element 'snippets/history' {
             'store.id': store.id,
             'pages.current': pages.current,
             'category.id': category.id
         } %}
-    </section>
+</section>
 {% endif %}
 
 {% if banner.bottom %}
-    <div class="banner banner-bottom {% if not settings.enable_banner_default %}mobile-off{% endif %}">
-        {{ banner.bottom }}
-    </div>
+<div class="banner banner-bottom {% if not settings.enable_banner_default %}mobile-off{% endif %}">
+    {{ banner.bottom }}
+</div>
 {% endif %}

@@ -2,7 +2,7 @@
     &__container 
         container: viewport 
         margin: 0 auto
-        padding: 50px (gutter / 2)
+        padding:  (gutter / 2)
 
     &__row 
         display: flex 
@@ -14,8 +14,13 @@
         flex: 0 1 240px
         padding: (gutter / 2)
 
+        &--security-title
+            flex 0 1 200px
+
     &__title 
         padding-bottom: 16px
+        font-size 16px
+        font-weight bold
 
     &__contact 
         &-icon 
@@ -23,5 +28,24 @@
             vertical-align: middle
             margin-right: 5px
             font-size: 20px
+
+
+    &__custom
+        &-link
+            font-size 14px
+            line-height normal
+            font-weight 500
+            color #211915    
             
-            
+            &:hover
+                color color
+
+
+.payments
+    &__list
+        display flex
+        flex-wrap wrap
+    
+    &__item 
+        padding: 3px
+        width: 40px
