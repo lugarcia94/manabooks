@@ -4,7 +4,8 @@
     &__container 
         container: viewport 
         margin: (gutter) auto
-        padding: (gutter) 0 
+        padding: (gutter) (gutter / 2)
+        text-align center
 
     &__header 
         text-align: center
@@ -15,6 +16,12 @@
         font-size: 14px
         font-weight: bold 
         line-height: normal
+
+    &__icon
+        display inline-block
+        margin: 0 15px
+        font-size: 35px
+        color color
 
     &__form 
         margin: -5px
@@ -40,6 +47,8 @@
 
     &__button 
         padding: 0 (gutter / 2)
+        font-size 18px
+        font-weight 800
 
 @media (min-width: 768px)
     .newsletter

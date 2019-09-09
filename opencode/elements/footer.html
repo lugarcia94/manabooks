@@ -17,63 +17,11 @@
                 </ul>
             </div>
 
-            {%
-                if 
-                Translation('ag_atendimento') != '' or
-                Translation('ag_telefone_1') != '' or 
-                Translation('ag_telefone_2') != '' or 
-                Translation('ag_email_1') != '' or 
-                Translation('ag_email_2') != ''
-            %}
+
             <div class="footer__box">
                 <h3 class="footer__title title title--small">Atendimento</h3>
-                <ul>
-                    {% if Translation('ag_atendimento') != '' %}
-                    <li class="footer__text" data-tray-tst="horario_atendimento">
-                        {{ Translation('ag_atendimento') }}
-                    </li>
-                    {% endif %}
-
-                    {% if Translation('ag_telefone_1') != '' or Translation('ag_telefone_2') != '' %}
-                    <li class="footer__contact">
-                        <div data-tray-tst="contato_telefone">
-                            {% if Translation('ag_telefone_1') != '' %}
-                            <div class="footer__contact-item footer__contact-item--phone">
-                                <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
-                                <span class="footer__contact-label">{{ Translation('ag_telefone_1') }}</span>
-                            </div>
-                            {% endif %}
-                            {% if Translation('ag_telefone_2') != '' %}
-                            <div class="footer__contact-item footer__contact-item--phone">
-                                <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
-                                <span class="footer__contact-label">{{ Translation('ag_telefone_2') }}</span>
-                            </div>
-                            {% endif %}
-                        </div>
-                    </li>
-                    {% endif %}
-
-                    {% if Translation('ag_email_1') != '' or Translation('ag_email_2') != '' %}
-                    <li class="footer__contact">
-                        <div data-tray-tst="contato_email">
-                            {% if Translation('ag_email_1') != '' %}
-                            <div class="footer__contact-item footer__contact-item--email">
-                                <span class="footer__contact-icon"><i class="fas fa-envelope"></i></span>
-                                <span class="footer__contact-label">{{ Translation('ag_email_1') }}</span>
-                            </div>
-                            {% endif %}
-                            {% if Translation('ag_email_2') != '' %}
-                            <div class="footer__contact-item footer__contact-item--email">
-                                <span class="footer__contact-icon"><i class="fas fa-envelope"></i></span>
-                                <span class="footer__contact-label">{{ Translation('ag_email_2') }}</span>
-                            </div>
-                            {% endif %}
-                        </div>
-                    </li>
-                    {% endif %}
-                </ul>
+                {% element 'snippets/attendance' { modifier: 'footer' } %}
             </div>
-            {% endif %}
 
             <div class="footer__box">
                 <h3 class="footer__title title title--small">Formas de Pagamento</h3>
@@ -109,5 +57,10 @@
                 {% endif %}
             </div>
         </div>
+
+        <div class="footer__copyright">
+            <p> {{ settings.copyright }}</p>
+        </div>
     </div>
+
 </footer>

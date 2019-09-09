@@ -12,14 +12,6 @@
         font-weight: 600
         text-align: center 
 
-        &:before
-            content ''
-            height: 3px
-            width: 100%
-            position: absolute
-            bottom: 0   
-            background color
-
     &__list 
         display: flex 
         justify-content: space-between
@@ -40,3 +32,31 @@
             left: -50px
         .slick-next 
             right: -50px
+
+
+@media desktop 
+    .showcase 
+        &__title 
+
+            &:before
+                content ''
+                height: 3px
+                width: 100%
+                position: absolute
+                bottom: 0   
+                background color
+
+        &__item
+            border 1px solid transparent 
+            border-radius 10px
+
+            &:hover
+                border 1px solid color
+                
+                .product__seeMore
+                    opacity 1
+                    visibility visible
+
+            &--empty
+                &:hover
+                    border  1px solid transparent

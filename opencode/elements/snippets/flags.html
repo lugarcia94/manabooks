@@ -1,0 +1,17 @@
+<div class="flags">
+    <ul class="flags__list">
+        {% if product.new %}
+        <li class="flags__item">
+            <span class="flags__title flags__new">Lançamento</span>
+        </li>
+        {% endif %}
+
+
+        {% if product.featured %}
+        <li class="flags__item">
+            <span class="flags__title flags__featured">Destaque</span>
+        </li>
+        {% endif %}
+
+    </ul>
+</div>

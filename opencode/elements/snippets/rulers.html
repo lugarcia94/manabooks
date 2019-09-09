@@ -18,7 +18,9 @@
         {% if settings.informationTitle02 and settings.informationSubtitle02 %}
         <li class="rulers__item rulers__item--ticket">
             <div class="rulers__box">
-                <span class="rulers__icon"><i class="fas fa-tags"></i></span>
+                <span class="rulers__icon">
+                    {% element 'snippets/icon' { 'name': 'desconto', 'width': '34', 'height': '33' } %}
+                </span>
                 <span class="rulers__title">
                     <strong>{{ settings.informationTitle02 }}</strong>
                     {{ settings.informationSubtitle02 }}
@@ -31,7 +33,9 @@
         {% if settings.informationTitle03 and settings.informationSubtitle03 %}
         <li class="rulers__item rulers__item--security">
             <div class="rulers__box">
-                <span class="rulers__icon"><i class="fas fa-lock"></i></span>
+                <span class="rulers__icon">
+                    {% element 'snippets/icon' { 'name': 'seguranca', 'width': '32', 'height': '37' } %}
+                </span>
                 <span class="rulers__title">
                     <strong>{{ settings.informationTitle03 }}</strong>
                     {{ settings.informationSubtitle03 }}
@@ -44,8 +48,9 @@
         {% if settings.informationTitle04 and settings.informationSubtitle04 %}
         <li class="rulers__item rulers__item--card">
             <div class="rulers__box">
-                <span class="rulers__icon"><i class="fas fa-credit-card"></i></span>
-                <span class="rulers__title">
+                <span class="rulers__icon">
+                    {% element 'snippets/icon' { 'name': 'card', 'width': '45', 'height': '35' } %}
+                </span> <span class="rulers__title">
                     <strong>{{ settings.informationTitle04 }}</strong>
                     {{ settings.informationSubtitle04 }}
                 </span>

@@ -3,23 +3,31 @@
         display: flex 
         border 1px solid color 
         border-radius 10px
+        background #ffffff
 
     &__input 
         flex: 1 
         min-width: 0 
         border none !important
         border-radius 10px
-        height 51px !important
 
     &__button 
         flex: 0 0 auto
         min-width: 65px
         background color
         border-radius 10px
-        height 51px
-
+      
         &-icon 
             font-size: 20px
 
         &-label 
             display: none 
+
+
+@media desktop 
+    .search
+        &__input 
+            height 51px !important
+
+        &__button 
+            height 51px

@@ -30,6 +30,7 @@ import 'Snippets/comments';
 import 'Snippets/modal';
 import 'Snippets/attendance';
 import 'Snippets/icon';
+import 'Snippets/menu-all';
 
 /** Modules */
 import 'Modules/header';

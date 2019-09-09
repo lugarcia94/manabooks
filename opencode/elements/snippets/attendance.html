@@ -1,18 +1,55 @@
 {% set class = '' %}
 {% if modifier %}{% set class = " attendance--" ~ modifier %}{% endif %}
+
 <div class="attendance{{ class }}">
     <div class="attendance__container">
         <div class="attendance__header">
-            <span class="attendance__icon">
+            <span class="attendance__span attendance__span--icon">
                 {% element 'snippets/icon' {
                     'name': 'telefone',
-                    'width': '25',
-                    'height': '28'
+                    'width': '26',
+                    'height': '26'
+                } %}
+
+                <span>
+                    Atendimento
+                </span>
+
+                {% element 'snippets/icon' {
+                    'name': 'arrow',
+                    'width': '8',
+                    'height': '5'
                 } %}
             </span>
+
             <div class="attendance__content">
-                <div class="attendance__title">Atendimento</div>
-                <div class="attendance__phone">{{ Translation('ag_telefone_1') }}</div>
+                {% if settings.telephone %}
+                <span class="attendance__title">Telefone</span>
+                <a href="tel:55{{ settings.telephone | replace({' ':'', '-':'', '(':'', ')':''}) }}"
+                    class="attendance__link attendance__title--phone">
+                    {{ settings.telephone }}
+                </a>
+                {% endif %}
+
+                {% if settings.whatsapp %}
+                <span class="attendance__title">Whatsapp</span>
+                <a href="https://api.whatsapp.com/send?phone=55{{ settings.whatsapp | replace({' ':'', '-':'', '(':'', ')':''}) }}"
+                    class="attendance__link attendance__link--whatsapp" target="_blank">
+                    {{ settings.whatsapp }}
+                </a>
+                {% endif %}
+
+                {% if settings.email %}
+                <a href="mailto:{{ settings.email }}" class="attendance__link attendance__email">
+                    {{ settings.email }}
+                </a>
+                {% endif %}
+
+                {% if settings.support %}
+                <span class=" attendance__link attendance__support">
+                    {{ settings.support }}
+                </span>
+                {% endif %}
             </div>
         </div>
     </div>

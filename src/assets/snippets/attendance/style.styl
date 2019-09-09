@@ -1,5 +1,4 @@
 .attendance 
-    margin-right: gutter
     font-size: 12px 
 
     &__header 
@@ -10,16 +9,27 @@
         justify-content: center 
         align-items: center 
 
-        width: 45px 
         height: 45px 
 
-        font-size: 22px
-
     &__title 
-        font-size: 15px
-        line-height normal
-        font-weight: 500        
+        display: block
+        font-size: 12px 
+        line-height: normal
+        font-weight: 600 
         color: #211915
+        margin-top: 5px
+
+        &:first-child
+            margin: 0px
+
+    &__link
+        font-size: 16px
+        font-weight: 600
+        color: #211915
+        letter-spacing: normal
+
+        &:hover
+            color: color
 
     &__content 
         display: flex 
@@ -27,5 +37,134 @@
         align-items: flex-start 
         flex-flow: column nowrap
 
-    &__phone 
-        letter-spacing: 1px
+    &__email
+        margin-top 4px
+
+    &__support
+        &:hover
+            color #211915
+
+    &__email,
+    &__support
+        font-size 12px
+        color #a6a4a3
+
+@media desktop 
+    .attendance
+        margin-right: (gutter/2)
+        
+        &__container 
+            display: flex
+            align-items: center
+            margin: -15px 0
+
+
+// attendance header
+.attendance
+    &--header
+        .attendance
+            margin-right: (gutter)
+        
+            &__container 
+                display: flex
+                align-items: center
+                margin: -15px 0
+
+            &__content 
+                position: absolute
+                top: 100%
+                left 50%
+                transform: translateX(-50%)
+                display: block
+                width auto
+                opacity 0
+                visibility hidden
+                margin-top: 20px
+                background: colorOne
+                border-radius: 12px
+                padding: 20px
+                background white
+                border: 1px solid color 
+                border-radius 10px
+
+                &:before
+                    content: ''
+                    height: 3px
+                    background: #6762a2
+                    width: 70%
+                    position: absolute
+                    top: -4px
+                    left: 50%
+                    transform: translateX(-50%)
+
+            &__span
+                color: #211915
+                font-size: 15px
+                font-weight: 500
+                line-height normal
+
+                span
+                    display inline-block 
+                    margin 0 5px
+
+
+                &--icon
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 45px
+
+// attendance header
+
+
+// attendance footer
+.attendance
+    &--footer
+
+        .attendance
+            &__container 
+                display: flex
+                align-items: center
+                margin: 0
+
+            &__content 
+                position: relative
+                opacity 1
+                visibility visible
+
+            &__span
+                &--icon
+                    display: none
+// end attendance footer
+
+// attendance mobile
+@media mobile 
+    .attendance
+        &--navigation
+            padding: 15px 30px
+            border-bottom: solid 1px rgba(0,0,0,0.1)
+
+            .attendance
+                &__container 
+                    display: flex
+                    align-items: center
+                    margin: 0
+
+                &__content 
+                    position: relative
+                    opacity 1
+                    visibility visible
+                
+                &__title
+                    margin-top: 5px
+
+                &__link
+                    font-size: 14px
+                    line-height: normal
+                    font-weight: 400
+                    color: #211915
+
+                &__span
+                    &--icon
+                        display: none
+// end attendance mobile

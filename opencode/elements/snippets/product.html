@@ -15,6 +15,8 @@
                     width="100" title="{{ product.name }}">
             </a>
             {% endif %}
+
+            {% element 'snippets/flags' {product:product} %}
         </figure>
 
         {% if settings.discount %}
@@ -44,7 +46,14 @@
     </div>
 
     <div class="product__actions">
+        <a class="product__seeMore" href="{{ product.link }}">
+            {% element 'snippets/icon' {
+                'name': 'prodsvg',
+                'width': '26',
+                'height': '26'
+            } %}
 
+            Comprar</a>
     </div>
 
 </article>

@@ -1,5 +1,6 @@
 <section class="newsletter" data-tray-tst="newsletter_box">
     <div class="newsletter__container">
+        <span class="newsletter__icon"><i class="fas fa-envelope"></i></span>
         <header class="newsletter__header">
             <h1 class="newsletter__title">Cadastre-se na nossa Newsletter</h1>
             <h2 class="newsletter__description">e fique por dentro das novidade</h2>
@@ -8,12 +9,11 @@
             <form class="newsletter__form" action="{{ links.newsletter }}" method="post" name="newsletter"
                 data-tray-tst="newsletter_form">
                 <div class="newsletter__box">
-                    <input class="newsletter__input" name="name" type="text"
-                        placeholder="{{ Translation('digitar_nome') }}" required>
+                    <input class="newsletter__input" name="name" type="text" placeholder="Nome" required>
                 </div>
                 <div class="newsletter__box">
-                    <input class="newsletter__input" name="email" type="email"
-                        placeholder="{{ Translation('digitar_email') }}" data-tray-tst="newsletter_email" required>
+                    <input class="newsletter__input" name="email" type="email" placeholder="Email"
+                        data-tray-tst="newsletter_email" required>
                 </div>
                 <div class="newsletter__actions">
                     <button class="newsletter__button" data-tray-tst="newsletter_cadastrar">Cadastrar</button>

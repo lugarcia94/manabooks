@@ -65,28 +65,9 @@
                 </div>
             </main>
 
-            {% if settings.hottags_position == 2 %}
-            <div class="tagcloud">
-                <h4>As palavras</h4>
-                <h3>{{ Translation('tags_mais_buscadas') }}</h3>
-                {% for tag in tags %}
-                <a href="{{ tag.url }}" style="font-size: {{ tag.font_size }}%">{{ tag.word }}</a>
-                {% endfor %}
-            </div>
-            {% endif %} {% if pages.current in ['catalog', 'search',
-                'product'] %} {% if settings.history_position == 2 %}
-            <section class="products-visited col-sm-12">
-                <h4>{{ Translation('confira_tambem') }}</h4>
-                <h3 class="related-title">
-                    {{ Translation('produtos_visitados') }}
-                </h3>
-                {% element 'snippets/history' { 'store.id': store.id,
-                    'pages.current': pages.current, 'category.id': category.id }
-                    %}
-            </section>
-            {% endif %} {% endif %} {% element 'snippets/newsletter' %} {%
-                element 'footer' %} {% element 'copyright' %} {% element
-                'partners' %}
+            {% element 'snippets/newsletter' %}
+            {% element 'footer' %}
+            {% element 'copyright' %}
         </div>
     </div>
 

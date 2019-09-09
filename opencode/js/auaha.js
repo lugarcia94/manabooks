@@ -619,7 +619,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _reset_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reset.styl */ \"./src/assets/reset.styl\");\n/* harmony import */ var _reset_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reset_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _forms_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./forms.styl */ \"./src/assets/forms.styl\");\n/* harmony import */ var _forms_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_forms_styl__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var Snippets_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Snippets/slick */ \"./src/assets/snippets/slick/index.js\");\n/* harmony import */ var Snippets_fake_select__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Snippets/fake-select */ \"./src/assets/snippets/fake-select/index.js\");\n/* harmony import */ var Snippets_title__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Snippets/title */ \"./src/assets/snippets/title/index.js\");\n/* harmony import */ var Snippets_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Snippets/button */ \"./src/assets/snippets/button/index.js\");\n/* harmony import */ var Snippets_breadcrumb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Snippets/breadcrumb */ \"./src/assets/snippets/breadcrumb/index.js\");\n/* harmony import */ var Snippets_logo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Snippets/logo */ \"./src/assets/snippets/logo/index.js\");\n/* harmony import */ var Snippets_search__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Snippets/search */ \"./src/assets/snippets/search/index.js\");\n/* harmony import */ var Snippets_customer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Snippets/customer */ \"./src/assets/snippets/customer/index.js\");\n/* harmony import */ var Snippets_cart__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Snippets/cart */ \"./src/assets/snippets/cart/index.js\");\n/* harmony import */ var Snippets_menu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Snippets/menu */ \"./src/assets/snippets/menu/index.js\");\n/* harmony import */ var Snippets_banner__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Snippets/banner */ \"./src/assets/snippets/banner/index.js\");\n/* harmony import */ var Snippets_product__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Snippets/product */ \"./src/assets/snippets/product/index.js\");\n/* harmony import */ var Snippets_newsletter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Snippets/newsletter */ \"./src/assets/snippets/newsletter/index.js\");\n/* harmony import */ var Snippets_rulers__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Snippets/rulers */ \"./src/assets/snippets/rulers/index.js\");\n/* harmony import */ var Snippets_socials__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Snippets/socials */ \"./src/assets/snippets/socials/index.js\");\n/* harmony import */ var Snippets_thumbs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Snippets/thumbs */ \"./src/assets/snippets/thumbs/index.js\");\n/* harmony import */ var Snippets_rating_short__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Snippets/rating-short */ \"./src/assets/snippets/rating-short/index.js\");\n/* harmony import */ var Snippets_share__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Snippets/share */ \"./src/assets/snippets/share/index.js\");\n/* harmony import */ var Snippets_toolbar__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! Snippets/toolbar */ \"./src/assets/snippets/toolbar/index.js\");\n/* harmony import */ var Snippets_paginate__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! Snippets/paginate */ \"./src/assets/snippets/paginate/index.js\");\n/* harmony import */ var Snippets_product_tabs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! Snippets/product-tabs */ \"./src/assets/snippets/product-tabs/index.js\");\n/* harmony import */ var Snippets_comments__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! Snippets/comments */ \"./src/assets/snippets/comments/index.js\");\n/* harmony import */ var Snippets_modal__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! Snippets/modal */ \"./src/assets/snippets/modal/index.js\");\n/* harmony import */ var Snippets_attendance__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! Snippets/attendance */ \"./src/assets/snippets/attendance/index.js\");\n/* harmony import */ var Snippets_icon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! Snippets/icon */ \"./src/assets/snippets/icon/index.js\");\n/* harmony import */ var Modules_header__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! Modules/header */ \"./src/assets/modules/header/index.js\");\n/* harmony import */ var Modules_navigation__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! Modules/navigation */ \"./src/assets/modules/navigation/index.js\");\n/* harmony import */ var Modules_main__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! Modules/main */ \"./src/assets/modules/main/index.js\");\n/* harmony import */ var Modules_showcase__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! Modules/showcase */ \"./src/assets/modules/showcase/index.js\");\n/* harmony import */ var Modules_footer__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! Modules/footer */ \"./src/assets/modules/footer/index.js\");\n/* harmony import */ var Modules_copyright__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! Modules/copyright */ \"./src/assets/modules/copyright/index.js\");\n/* harmony import */ var Modules_partners__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! Modules/partners */ \"./src/assets/modules/partners/index.js\");\n/* harmony import */ var Modules_filter__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! Modules/filter */ \"./src/assets/modules/filter/index.js\");\n/* harmony import */ var Modules_products_visited__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! Modules/products-visited */ \"./src/assets/modules/products-visited/index.js\");\n/* harmony import */ var Modules_buy_together__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! Modules/buy-together */ \"./src/assets/modules/buy-together/index.js\");\n/* harmony import */ var Pages_page_home__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! Pages/page-home */ \"./src/assets/pages/page-home/index.js\");\n/* harmony import */ var Pages_page_product__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! Pages/page-product */ \"./src/assets/pages/page-product/index.js\");\n/* harmony import */ var Pages_page_catalog__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! Pages/page-catalog */ \"./src/assets/pages/page-catalog/index.js\");\n/* harmony import */ var Pages_page_noticias__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! Pages/page-noticias */ \"./src/assets/pages/page-noticias/index.js\");\n/* harmony import */ var Pages_page_depoimentos__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! Pages/page-depoimentos */ \"./src/assets/pages/page-depoimentos/index.js\");\n/**\n * Reset\n */\n\n\n/** Snippets */\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/** Modules */\n\n\n\n\n\n\n\n\n\n\n\n/** Page */\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/assets/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _reset_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reset.styl */ \"./src/assets/reset.styl\");\n/* harmony import */ var _reset_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reset_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _forms_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./forms.styl */ \"./src/assets/forms.styl\");\n/* harmony import */ var _forms_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_forms_styl__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var Snippets_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Snippets/slick */ \"./src/assets/snippets/slick/index.js\");\n/* harmony import */ var Snippets_fake_select__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Snippets/fake-select */ \"./src/assets/snippets/fake-select/index.js\");\n/* harmony import */ var Snippets_title__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Snippets/title */ \"./src/assets/snippets/title/index.js\");\n/* harmony import */ var Snippets_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Snippets/button */ \"./src/assets/snippets/button/index.js\");\n/* harmony import */ var Snippets_breadcrumb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Snippets/breadcrumb */ \"./src/assets/snippets/breadcrumb/index.js\");\n/* harmony import */ var Snippets_logo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Snippets/logo */ \"./src/assets/snippets/logo/index.js\");\n/* harmony import */ var Snippets_search__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Snippets/search */ \"./src/assets/snippets/search/index.js\");\n/* harmony import */ var Snippets_customer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Snippets/customer */ \"./src/assets/snippets/customer/index.js\");\n/* harmony import */ var Snippets_cart__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Snippets/cart */ \"./src/assets/snippets/cart/index.js\");\n/* harmony import */ var Snippets_menu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Snippets/menu */ \"./src/assets/snippets/menu/index.js\");\n/* harmony import */ var Snippets_banner__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Snippets/banner */ \"./src/assets/snippets/banner/index.js\");\n/* harmony import */ var Snippets_product__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Snippets/product */ \"./src/assets/snippets/product/index.js\");\n/* harmony import */ var Snippets_newsletter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Snippets/newsletter */ \"./src/assets/snippets/newsletter/index.js\");\n/* harmony import */ var Snippets_rulers__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Snippets/rulers */ \"./src/assets/snippets/rulers/index.js\");\n/* harmony import */ var Snippets_socials__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Snippets/socials */ \"./src/assets/snippets/socials/index.js\");\n/* harmony import */ var Snippets_thumbs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Snippets/thumbs */ \"./src/assets/snippets/thumbs/index.js\");\n/* harmony import */ var Snippets_rating_short__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Snippets/rating-short */ \"./src/assets/snippets/rating-short/index.js\");\n/* harmony import */ var Snippets_share__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Snippets/share */ \"./src/assets/snippets/share/index.js\");\n/* harmony import */ var Snippets_toolbar__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! Snippets/toolbar */ \"./src/assets/snippets/toolbar/index.js\");\n/* harmony import */ var Snippets_paginate__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! Snippets/paginate */ \"./src/assets/snippets/paginate/index.js\");\n/* harmony import */ var Snippets_product_tabs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! Snippets/product-tabs */ \"./src/assets/snippets/product-tabs/index.js\");\n/* harmony import */ var Snippets_comments__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! Snippets/comments */ \"./src/assets/snippets/comments/index.js\");\n/* harmony import */ var Snippets_modal__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! Snippets/modal */ \"./src/assets/snippets/modal/index.js\");\n/* harmony import */ var Snippets_attendance__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! Snippets/attendance */ \"./src/assets/snippets/attendance/index.js\");\n/* harmony import */ var Snippets_icon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! Snippets/icon */ \"./src/assets/snippets/icon/index.js\");\n/* harmony import */ var Snippets_menu_all__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! Snippets/menu-all */ \"./src/assets/snippets/menu-all/index.js\");\n/* harmony import */ var Modules_header__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! Modules/header */ \"./src/assets/modules/header/index.js\");\n/* harmony import */ var Modules_navigation__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! Modules/navigation */ \"./src/assets/modules/navigation/index.js\");\n/* harmony import */ var Modules_main__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! Modules/main */ \"./src/assets/modules/main/index.js\");\n/* harmony import */ var Modules_showcase__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! Modules/showcase */ \"./src/assets/modules/showcase/index.js\");\n/* harmony import */ var Modules_footer__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! Modules/footer */ \"./src/assets/modules/footer/index.js\");\n/* harmony import */ var Modules_copyright__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! Modules/copyright */ \"./src/assets/modules/copyright/index.js\");\n/* harmony import */ var Modules_partners__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! Modules/partners */ \"./src/assets/modules/partners/index.js\");\n/* harmony import */ var Modules_filter__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! Modules/filter */ \"./src/assets/modules/filter/index.js\");\n/* harmony import */ var Modules_products_visited__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! Modules/products-visited */ \"./src/assets/modules/products-visited/index.js\");\n/* harmony import */ var Modules_buy_together__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! Modules/buy-together */ \"./src/assets/modules/buy-together/index.js\");\n/* harmony import */ var Pages_page_home__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! Pages/page-home */ \"./src/assets/pages/page-home/index.js\");\n/* harmony import */ var Pages_page_product__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! Pages/page-product */ \"./src/assets/pages/page-product/index.js\");\n/* harmony import */ var Pages_page_catalog__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! Pages/page-catalog */ \"./src/assets/pages/page-catalog/index.js\");\n/* harmony import */ var Pages_page_noticias__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! Pages/page-noticias */ \"./src/assets/pages/page-noticias/index.js\");\n/* harmony import */ var Pages_page_depoimentos__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! Pages/page-depoimentos */ \"./src/assets/pages/page-depoimentos/index.js\");\n/**\n * Reset\n */\n\n\n/** Snippets */\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/** Modules */\n\n\n\n\n\n\n\n\n\n\n\n/** Page */\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/assets/index.js?");
 
 /***/ }),
 
@@ -850,7 +850,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.styl */ \"./src/assets/modules/showcase/style.styl\");\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);\n\n\n$('.showcase__list[data-carousel=true]').each(function () {\n  $(this).find('.showcase__item--empty').remove();\n  $(this).slick({\n    mobileFirst: true,\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    prevArrow: \"<button type=\\\"button\\\" class=\\\"slick-prev\\\"><i class=\\\"fas fa-chevron-left\\\"></i></button>\",\n    nextArrow: \"<button type=\\\"button\\\" class=\\\"slick-next\\\"><i class=\\\"fas fa-chevron-right\\\"></i></button>\",\n    responsive: [{\n      breakpoint: 424,\n      settings: {\n        slidesToShow: 3,\n        slidesToScroll: 3\n      }\n    }, {\n      breakpoint: 767,\n      settings: {\n        slidesToShow: 4,\n        slidesToScroll: 4\n      }\n    }, {\n      breakpoint: 991,\n      settings: {\n        slidesToShow: 5,\n        slidesToScroll: 5\n      }\n    }]\n  });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/assets/modules/showcase/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.styl */ \"./src/assets/modules/showcase/style.styl\");\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);\n\n\n$('.showcase__list[data-carousel=true]').each(function () {\n  $(this).find('.showcase__item--empty').remove();\n  $(this).slick({\n    mobileFirst: true,\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    prevArrow: \"<button type=\\\"button\\\" class=\\\"slick-prev\\\"><i class=\\\"fas fa-chevron-left\\\"></i></button>\",\n    nextArrow: \"<button type=\\\"button\\\" class=\\\"slick-next\\\"><i class=\\\"fas fa-chevron-right\\\"></i></button>\",\n    responsive: [{\n      breakpoint: 424,\n      settings: {\n        slidesToShow: 3,\n        slidesToScroll: 3\n      }\n    }, {\n      breakpoint: 767,\n      settings: {\n        slidesToShow: 4,\n        slidesToScroll: 4\n      }\n    }, {\n      breakpoint: 991,\n      settings: {\n        slidesToShow: 4,\n        slidesToScroll: 4\n      }\n    }]\n  });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/assets/modules/showcase/index.js?");
 
 /***/ }),
 
@@ -1183,7 +1183,31 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _svg_icon_cart_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./svg/icon-cart.svg */ \"./src/assets/snippets/icon/svg/icon-cart.svg\");\n/* harmony import */ var _svg_icon_search_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./svg/icon-search.svg */ \"./src/assets/snippets/icon/svg/icon-search.svg\");\n/* harmony import */ var _svg_icon_user_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./svg/icon-user.svg */ \"./src/assets/snippets/icon/svg/icon-user.svg\");\n/* harmony import */ var _svg_icon_orders_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./svg/icon-orders.svg */ \"./src/assets/snippets/icon/svg/icon-orders.svg\");\n/* harmony import */ var _svg_icon_telefone_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./svg/icon-telefone.svg */ \"./src/assets/snippets/icon/svg/icon-telefone.svg\");\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _svg_icon_cart_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./svg/icon-cart.svg */ \"./src/assets/snippets/icon/svg/icon-cart.svg\");\n/* harmony import */ var _svg_icon_search_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./svg/icon-search.svg */ \"./src/assets/snippets/icon/svg/icon-search.svg\");\n/* harmony import */ var _svg_icon_user_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./svg/icon-user.svg */ \"./src/assets/snippets/icon/svg/icon-user.svg\");\n/* harmony import */ var _svg_icon_orders_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./svg/icon-orders.svg */ \"./src/assets/snippets/icon/svg/icon-orders.svg\");\n/* harmony import */ var _svg_icon_telefone_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./svg/icon-telefone.svg */ \"./src/assets/snippets/icon/svg/icon-telefone.svg\");\n/* harmony import */ var _svg_icon_prodsvg_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./svg/icon-prodsvg.svg */ \"./src/assets/snippets/icon/svg/icon-prodsvg.svg\");\n/* harmony import */ var _svg_icon_arrow_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./svg/icon-arrow.svg */ \"./src/assets/snippets/icon/svg/icon-arrow.svg\");\n/* harmony import */ var _svg_icon_facebook_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./svg/icon-facebook.svg */ \"./src/assets/snippets/icon/svg/icon-facebook.svg\");\n/* harmony import */ var _svg_icon_instagram_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./svg/icon-instagram.svg */ \"./src/assets/snippets/icon/svg/icon-instagram.svg\");\n/* harmony import */ var _svg_icon_desconto_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./svg/icon-desconto.svg */ \"./src/assets/snippets/icon/svg/icon-desconto.svg\");\n/* harmony import */ var _svg_icon_seguranca_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./svg/icon-seguranca.svg */ \"./src/assets/snippets/icon/svg/icon-seguranca.svg\");\n/* harmony import */ var _svg_icon_card_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./svg/icon-card.svg */ \"./src/assets/snippets/icon/svg/icon-card.svg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/snippets/icon/svg/icon-arrow.svg":
+/*!*****************************************************!*\
+  !*** ./src/assets/snippets/icon/svg/icon-arrow.svg ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-arrow-usage\",\n      viewBox: \"0 0 8 5\",\n      url: \"../elements/\" + \"sprite.html#icon-arrow\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-arrow.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/snippets/icon/svg/icon-card.svg":
+/*!****************************************************!*\
+  !*** ./src/assets/snippets/icon/svg/icon-card.svg ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-card-usage\",\n      viewBox: \"0 0 49 35\",\n      url: \"../elements/\" + \"sprite.html#icon-card\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-card.svg?");
 
 /***/ }),
 
@@ -1199,6 +1223,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/assets/snippets/icon/svg/icon-desconto.svg":
+/*!********************************************************!*\
+  !*** ./src/assets/snippets/icon/svg/icon-desconto.svg ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-desconto-usage\",\n      viewBox: \"0 0 34 33\",\n      url: \"../elements/\" + \"sprite.html#icon-desconto\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-desconto.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/snippets/icon/svg/icon-facebook.svg":
+/*!********************************************************!*\
+  !*** ./src/assets/snippets/icon/svg/icon-facebook.svg ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-facebook-usage\",\n      viewBox: \"0 0 41 41\",\n      url: \"../elements/\" + \"sprite.html#icon-facebook\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-facebook.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/snippets/icon/svg/icon-instagram.svg":
+/*!*********************************************************!*\
+  !*** ./src/assets/snippets/icon/svg/icon-instagram.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-instagram-usage\",\n      viewBox: \"0 0 41 40\",\n      url: \"../elements/\" + \"sprite.html#icon-instagram\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-instagram.svg?");
+
+/***/ }),
+
 /***/ "./src/assets/snippets/icon/svg/icon-orders.svg":
 /*!******************************************************!*\
   !*** ./src/assets/snippets/icon/svg/icon-orders.svg ***!
@@ -1211,6 +1271,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/assets/snippets/icon/svg/icon-prodsvg.svg":
+/*!*******************************************************!*\
+  !*** ./src/assets/snippets/icon/svg/icon-prodsvg.svg ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-prodsvg-usage\",\n      viewBox: \"0 0 27 28\",\n      url: \"../elements/\" + \"sprite.html#icon-prodsvg\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-prodsvg.svg?");
+
+/***/ }),
+
 /***/ "./src/assets/snippets/icon/svg/icon-search.svg":
 /*!******************************************************!*\
   !*** ./src/assets/snippets/icon/svg/icon-search.svg ***!
@@ -1220,6 +1292,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-search-usage\",\n      viewBox: \"0 0 28 28\",\n      url: \"../elements/\" + \"sprite.html#icon-search\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-search.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/snippets/icon/svg/icon-seguranca.svg":
+/*!*********************************************************!*\
+  !*** ./src/assets/snippets/icon/svg/icon-seguranca.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n      id: \"icon-seguranca-usage\",\n      viewBox: \"0 0 32 38\",\n      url: \"../elements/\" + \"sprite.html#icon-seguranca\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack:///./src/assets/snippets/icon/svg/icon-seguranca.svg?");
 
 /***/ }),
 
@@ -1267,6 +1351,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/snippets/logo/style.styl?");
+
+/***/ }),
+
+/***/ "./src/assets/snippets/menu-all/index.js":
+/*!***********************************************!*\
+  !*** ./src/assets/snippets/menu-all/index.js ***!
+  \***********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.styl */ \"./src/assets/snippets/menu-all/style.styl\");\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_styl__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/assets/snippets/menu-all/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/snippets/menu-all/style.styl":
+/*!*************************************************!*\
+  !*** ./src/assets/snippets/menu-all/style.styl ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/snippets/menu-all/style.styl?");
 
 /***/ }),
 
