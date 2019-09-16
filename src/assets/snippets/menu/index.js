@@ -25,15 +25,12 @@ function navigationAlign() {
     $('.menu--navigation').each(function () {
 
         $(this).find('.menu--nv2').removeClass('menu--rtl');
-        $(this).find('.menu--nv2').attr('style', '');
 
         $(this).find('.menu--nv2').each(function () {
-
             const nav = $(this).closest('.menu--nv1').outerWidth();
-            const left = $(this).offset().left + $(this).outerWidth();
+            const left = $(this).offset().left + $(this).outerWidth() - $(this).closest('.menu--nv1').offset().left;
 
             if (left > nav) {
-
                 $(this).addClass('menu--rtl');
                 resize(this);
             }
@@ -51,6 +48,7 @@ function resize(el) {
         });
     }
 }
+
 
 const childs = Array.from(document.querySelectorAll('.menu__item--has-child'));
 

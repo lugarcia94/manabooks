@@ -79,6 +79,11 @@
                         height: 50px
                         position relative
 
+                    &--nv2
+                        border 1px solid color
+                        border-radius: 4px
+                        padding 12px 0
+
                 &__item 
                     &--hidden 
                         display: none 
@@ -90,7 +95,12 @@
                                 visibility: visible
                           
                     &--nv2
+
                         &:hover
+                            .menu__link--nv2
+                                .menu__label
+                                    border-bottom 1px solid color 
+
                             .menu--nv3
                                 opacity: 1 
                                 visibility: visible
@@ -113,6 +123,11 @@
                         &:nth-child(n+8)
                             display none
                         
+                        &:first-child
+                            .menu--nv2
+                                left 0
+                                transform translateX(0%)
+                        
                 &__link
                     font-size 16px
                     line-height normal
@@ -127,9 +142,18 @@
                         padding: (gutter / 2)
 
                         white-space: nowrap
+
                     &--nv2 
                         display: block
-                        padding: 5px (gutter / 2)
+                        padding: 10px (gutter)
+
+                        .menu__label
+                            border-bottom 1px solid transparent
+                  
+                    &--nv3 
+                        display: block
+                        padding 3px 0
+                    
 
                 &--sub 
                     padding: 10px 0
@@ -143,21 +167,35 @@
                     min-width: 250px
                     opacity: 0 
                     visibility: hidden
-
+                    padding 0
                     background: #fff 
-                    box-shadow: 0 0 0 1px color 
-
-                    border-radius: 4px
 
                 &--nv3
                     position absolute
-                    right 0
-                    top 0px
-                    
-                    height 100%
+                    left: 99%
+                    top: 0px
+                    height: 100%
 
-                    opacity: 0 
+                    opacity: 0
                     visibility: hidden
+                    background: white
+
+                    display block
+                    min-width: 150px
+                    padding: 20px 30px
+                    border: 1px solid
+                    border-radius: 0px 5px 5px 0px
+                    border-width: 1px 1px 1px 0px
+
+                    &:before
+                        content: ''
+                        width: 1px
+                        height: 90%
+                        background: color
+                        position: absolute
+                        top: 50%
+                        left: 0
+                        transform: translateY(-50%)
                     
 
                 &--rtl 

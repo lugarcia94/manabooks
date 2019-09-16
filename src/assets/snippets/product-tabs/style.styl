@@ -136,4 +136,80 @@
 
 
 
-                
+.tabs
+    &__list
+        display: flex
+        align-items: center
+
+    &__link
+    
+        color: #3d3d3c
+        text-transform: none
+
+#ProdAbas 
+    a, li, .aberta a
+        background: none
+        padding: 10px 15px
+
+
+    a, .aberta a
+        font-size: 26px
+        font-weight: normal
+        line-height: normal
+        letter-spacing: -0.41px
+
+    a
+        color: #8e8e8e
+
+    .aberta a
+        color: #3d3d3c
+
+@media mobile 
+    
+    .tabs
+        &__list
+            flex-wrap: wrap
+
+// bloco de preco
+.precode 
+    font-size: 17px
+    font-weight: normal
+    font-style: normal
+    letter-spacing: normal
+    color: #8e8e8e
+
+    .currency
+        font-size: 11px
+
+.txt-por
+    display none
+
+    +br
+        display: none
+
+.PrecoPrincipal
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+
+    +br
+        display: none
+
+.produto-economize
+    display: none
+
+#info_preco
+    font-size: 15px
+    line-height: normal
+    font-weight: 700
+    color: #6762a2
+
+    .txt-cadaparcelas
+        .preco-parc2
+            font-size: 13px
+
+
+
+// end bloco de preco
+
+

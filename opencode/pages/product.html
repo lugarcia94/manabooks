@@ -123,6 +123,9 @@
 {% element 'buy-together' %}
 
 
+
+
+<!-- produtos relacionandos -->
 {% if product.related_products %}
 <div id="prognoos_lsi"></div>
 <section class="products-related">
@@ -130,12 +133,14 @@
         <h3 class="showcase__title title">{{ Translation('produtos_relacionados') }}</h3>
     </div>
 
-    <div class="row">
+    <div class="related__list">
         {% for related in product.related_products %}
-        <div class="col-sm-3">
+        <div class="showcase__item showcase__item--related">
             {% element 'snippets/product' {"product": related} %}
         </div>
         {% endfor %}
+    </div>
+
     </div>
 </section>
 {% endif %}

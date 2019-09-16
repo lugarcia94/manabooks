@@ -1,10 +1,10 @@
 import './style.styl';
 import axios from 'axios';
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
 
     const tabs = document.querySelector('.product-tabs');
-    if(tabs){
+    if (tabs) {
         const urls = Array.from(tabs.querySelectorAll('[data-url]'));
 
         urls.forEach((element) => {
@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function(){
                 const href = evt.currentTarget.getAttribute('href');
                 const hash = href.match(/^[^#]*#(.*)/)[1];
 
-                if(hash) {
+                if (hash) {
                     const contents = Array.from(document.querySelectorAll('.prodBox'));
                     const current = document.querySelector(`#${ hash }`);
 
                     contents.forEach((content) => content.setAttribute('style', 'display:none'));
-                    if(current) current.setAttribute('style', 'display: block');
+                    if (current) current.setAttribute('style', 'display: block');
 
                     customTabs.forEach((customTab) => customTab.classList.remove('on'));
                     evt.currentTarget.classList.add('on');
@@ -37,9 +37,8 @@ document.addEventListener("DOMContentLoaded", function(){
             });
         });
 
-        if(customTabs.length) {
+        if (customTabs.length) {
             customTabs[0].classList.add('on');
         }
     }
 });
-

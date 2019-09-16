@@ -217,6 +217,7 @@ button,
 select {
   outline: none;
   box-shadow: none;
+  border-radius: 10px !important;
 }
 ::-webkit-input-placeholder::focus {
   color: transparent;
@@ -1345,10 +1346,11 @@ button.clear {
 .customer__link--icon {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 45px;
   height: 45px;
   border-radius: 3px;
+  fill: #6762a2;
 }
 .customer--header .customer__main {
   display: none;
@@ -1605,12 +1607,20 @@ button.clear {
     height: 50px;
     position: relative;
   }
+  .menu--navigation .menu__ul--nv2 {
+    border: 1px solid #6762a2;
+    border-radius: 4px;
+    padding: 12px 0;
+  }
   .menu--navigation .menu__item--hidden {
     display: none;
   }
   .menu--navigation .menu__item--has-child:hover .menu--nv2 {
     opacity: 1;
     visibility: visible;
+  }
+  .menu--navigation .menu__item--nv2:hover .menu__link--nv2 .menu__label {
+    border-bottom: 1px solid #6762a2;
   }
   .menu--navigation .menu__item--nv2:hover .menu--nv3 {
     opacity: 1;
@@ -1631,6 +1641,10 @@ button.clear {
   .menu--navigation .menu__item--nv1:nth-child(n+8) {
     display: none;
   }
+  .menu--navigation .menu__item--nv1:first-child .menu--nv2 {
+    left: 0;
+    transform: translateX(0%);
+  }
   .menu--navigation .menu__link {
     font-size: 16px;
     line-height: normal;
@@ -1647,7 +1661,14 @@ button.clear {
   }
   .menu--navigation .menu__link--nv2 {
     display: block;
-    padding: 5px 15px;
+    padding: 10px 30px;
+  }
+  .menu--navigation .menu__link--nv2 .menu__label {
+    border-bottom: 1px solid transparent;
+  }
+  .menu--navigation .menu__link--nv3 {
+    display: block;
+    padding: 3px 0;
   }
   .menu--navigation .menu--sub {
     padding: 10px 0;
@@ -1660,17 +1681,33 @@ button.clear {
     min-width: 250px;
     opacity: 0;
     visibility: hidden;
+    padding: 0;
     background: #fff;
-    box-shadow: 0 0 0 1px #6762a2;
-    border-radius: 4px;
   }
   .menu--navigation .menu--nv3 {
     position: absolute;
-    right: 0;
+    left: 99%;
     top: 0px;
     height: 100%;
     opacity: 0;
     visibility: hidden;
+    background: #fff;
+    display: block;
+    min-width: 150px;
+    padding: 20px 30px;
+    border: 1px solid;
+    border-radius: 0px 5px 5px 0px;
+    border-width: 1px 1px 1px 0px;
+  }
+  .menu--navigation .menu--nv3:before {
+    content: '';
+    width: 1px;
+    height: 90%;
+    background: #6762a2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
   .menu--navigation .menu--rtl {
     left: auto;
@@ -2627,7 +2664,15 @@ button.clear {
   color: #000;
 }
 .rating-short__votes {
-  display: none;
+  font-size: 0;
+  margin: 0 10px;
+}
+.rating-short__votes:before {
+  content: 'deixe sua avaliaçao';
+  display: inline-block;
+  font-size: 12px;
+  color: #6762a2;
+  font-weight: 600;
 }
 
 @-webkit-keyframes slideOpen {
@@ -3143,6 +3188,74 @@ button.clear {
     box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
     padding: 30px;
   }
+}
+.tabs__list {
+  display: flex;
+  align-items: center;
+}
+.tabs__link {
+  color: #3d3d3c;
+  text-transform: none;
+}
+#ProdAbas a,
+#ProdAbas li,
+#ProdAbas .aberta a {
+  background: none;
+  padding: 10px 15px;
+}
+#ProdAbas a,
+#ProdAbas .aberta a {
+  font-size: 26px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: -0.41px;
+}
+#ProdAbas a {
+  color: #8e8e8e;
+}
+#ProdAbas .aberta a {
+  color: #3d3d3c;
+}
+@media screen and (max-width: 991px) {
+  .tabs__list {
+    flex-wrap: wrap;
+  }
+}
+.precode {
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #8e8e8e;
+}
+.precode .currency {
+  font-size: 11px;
+}
+.txt-por {
+  display: none;
+}
+.txt-por +br {
+  display: none;
+}
+.PrecoPrincipal {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+.PrecoPrincipal +br {
+  display: none;
+}
+.produto-economize {
+  display: none;
+}
+#info_preco {
+  font-size: 15px;
+  line-height: normal;
+  font-weight: 700;
+  color: #6762a2;
+}
+#info_preco .txt-cadaparcelas .preco-parc2 {
+  font-size: 13px;
 }
 
 @-webkit-keyframes slideOpen {
@@ -3734,12 +3847,6 @@ button.clear {
   }
   .attendance--navigation .attendance__title {
     margin-top: 5px;
-  }
-  .attendance--navigation .attendance__link {
-    font-size: 14px;
-    line-height: normal;
-    font-weight: 400;
-    color: #211915;
   }
   .attendance--navigation .attendance__span--icon {
     display: none;
@@ -5013,7 +5120,6 @@ button.clear {
 #ProdAbas .aberta a {
   background: none;
   padding: 10px 0;
-  font-size: 18px;
   font-weight: 700;
   text-align: center;
   color: #000;
@@ -5129,6 +5235,12 @@ button.clear {
 }
 .page-home__banner--grid {
   margin-top: 90px;
+}
+@media screen and (max-width: 991px) {
+  .page-home__banner-item {
+    padding: 15px;
+    flex: 0 0 100%;
+  }
 }
 
 @-webkit-keyframes slideOpen {
@@ -5286,7 +5398,7 @@ button.clear {
   font-size: 0;
   color: #fff;
   border: 0;
-  border-radius: 0;
+  border-radius: 10px;
 }
 #cepbox .botao-simular-frete:before {
   content: 'Calcular';
@@ -5367,6 +5479,7 @@ button.clear {
   border: solid 1px rgba(0,0,0,0.1);
   font-size: 10px;
   text-transform: uppercase;
+  border-radius: 10px;
 }
 .page-product__links-item--compare input {
   display: none;
